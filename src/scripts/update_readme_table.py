@@ -45,7 +45,7 @@ def script() -> None:
 	new_table_lines.append("| --- | --- |")
 
 	for slug in unique_slugs:
-		new_table_lines.append(f"| {slug} | ![{slug}](./assets/shields/true_flat/{slug}.svg) |")
+		new_table_lines.append(f"| {slug} | ![{slug}](./assets/shields/flat/{slug}.svg) |")
 
 	new_table = "\n".join(new_table_lines)
 
