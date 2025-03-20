@@ -1,7 +1,10 @@
 from dataclasses import dataclass
 from operator import itemgetter
+from pathlib import Path
 from typing import Final, Optional
 from urllib.parse import urlencode
+
+import requests
 
 from src.common.enums import ShieldsIOBadgeTypes, ShieldsIONamedColors
 from src.common.types.hex_code import HexCode
@@ -11,6 +14,7 @@ from src.util import is_valid_base_64
 
 @dataclass
 class ShieldsIOBadge:
+	slug: str
 	label: str
 	logo: bytes
 	message: Optional[str] = None
@@ -22,8 +26,8 @@ class ShieldsIOBadge:
 	__label_color: Optional[str] = None
 
 	def __post_init__(self):
-		if is_valid_base_64(self.logo):
-			raise ValueError(f"Invalid base64 data: {self.base64}")
+		if not is_valid_base_64(self.logo):
+			raise ValueError(f"Invalid base64 data: {self.logo}")
 
 		if self.style not in ShieldsIOBadgeTypes:
 			raise ValueError(f"Invalid style: {self.style}")
@@ -35,10 +39,10 @@ class ShieldsIOBadge:
 	def __parse_shields_io_color_object(color_obj: Optional[ShieldsIOColor]) -> str:
 		if color_obj:
 			if isinstance(color_obj, ShieldsIONamedColors):
-				return color_obj.slug
+				return color_obj.slug.replace("#", "")
 
 			elif isinstance(color_obj, HexCode):
-				return color_obj.hex
+				return color_obj.hex.replace("#", "")
 
 			raise ValueError(f"Invalid color object: {color_obj}")
 
@@ -65,4 +69,7 @@ class ShieldsIOBadge:
 		return self.__BASE_URL + self.build_shieldsio_badge_str()
 
 	def download_shieldsio_badge(self, path: str) -> None:
-		pass
+		img_data = requests.get(self.build_shieldsio_url()).content
+
+		with open(Path(path, self.slug), "wb") as handler:
+			handler.write(img_data)

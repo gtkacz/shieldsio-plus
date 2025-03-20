@@ -1,4 +1,4 @@
-from base64 import b64encode
+from base64 import b64decode, b64encode
 from pathlib import Path
 
 
@@ -25,7 +25,12 @@ def is_valid_base_64(data: bytes) -> bool:
 	Returns:
 		bool: True if the base64 string is valid, False otherwise.
 	"""
+	if not isinstance(data, bytes):
+		return False
+
 	try:
-		return b64encode(b64encode(data)) == data
+		b64decode(data, validate=True)
+		return True
 	except Exception:
+		# If any exception occurs during decoding, the input is not valid base64
 		return False

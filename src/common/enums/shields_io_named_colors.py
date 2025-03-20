@@ -5,6 +5,7 @@ from src.common.types.hex_code import HexCode
 
 ShieldsIONamedColorsValue = Tuple[str, HexCode]
 
+
 class ShieldsIONamedColors(BetterEnum):
 	BRIGHTGREEN: ShieldsIONamedColorsValue = ("brightgreen", HexCode("#4c1"))
 	GREEN: ShieldsIONamedColorsValue = ("green", HexCode("#97ca00"))
