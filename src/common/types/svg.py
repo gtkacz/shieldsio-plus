@@ -79,7 +79,10 @@ class SVG:
 				SVG.remove_shadow_texts(child)
 
 	def parse_real_flat(self) -> None:
-		root = ET.fromstring(self.svg_str)
+		try:
+			root = ET.fromstring(self.svg_str)
+		except ET.ParseError as e:
+			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
 		self.remove_linear_gradients(root)
 		self.remove_shadow_texts(root)

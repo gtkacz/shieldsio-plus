@@ -16,7 +16,7 @@ def script() -> None:
 	parser.add_argument(
 		"--json_filename",
 		type=str,
-		default="data/badges.json",
+		default="assets/data/badges.json",
 		help="Path to the JSON filename to be read.",
 		required=False,
 	)

@@ -69,7 +69,7 @@ class ShieldsIOBadge:
 		self.path = Path(path + "/" + self.style.name.lower()).resolve()
 
 		if not self.path.exists():
-			self.path.mkdir(parents=True)
+			self.path.mkdir(parents=True, exist_ok=True)
 
 		self.path /= f"{self.slug}.svg"
 

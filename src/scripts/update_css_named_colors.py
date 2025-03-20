@@ -13,7 +13,7 @@ def script() -> None:
 	parser.add_argument(
 		"--output-path",
 		type=str,
-		default="data/css_named_colors.json",
+		default="assets/data/css_named_colors.json",
 		help="Output path for the CSS named colors data.",
 		required=False,
 	)

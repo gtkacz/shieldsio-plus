@@ -27,7 +27,7 @@ def main():
 				),
 			)
 
-	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields/", f"{BASE_DIR}/data/badges.json")
+	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields/", f"{BASE_DIR}/assets/data/badges.json")
 
 
 if __name__ == "__main__":

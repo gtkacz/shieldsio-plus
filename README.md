@@ -37,13 +37,19 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | oracle | ![oracle](./assets/shields/true_flat/oracle.svg) |
 | oracle-white | ![oracle-white](./assets/shields/true_flat/oracle-white.svg) |
 | orcid | ![orcid](./assets/shields/true_flat/orcid.svg) |
+| orcid-grey-logo | ![orcid-grey-logo](./assets/shields/true_flat/orcid-grey-logo.svg) |
+| orcid-logo | ![orcid-logo](./assets/shields/true_flat/orcid-logo.svg) |
 | orcid-white | ![orcid-white](./assets/shields/true_flat/orcid-white.svg) |
+| orcid-white-logo | ![orcid-white-logo](./assets/shields/true_flat/orcid-white-logo.svg) |
 | phacility | ![phacility](./assets/shields/true_flat/phacility.svg) |
 | plnkr | ![plnkr](./assets/shields/true_flat/plnkr.svg) |
 | plnkr-white | ![plnkr-white](./assets/shields/true_flat/plnkr-white.svg) |
+| sbc | ![sbc](./assets/shields/true_flat/sbc.svg) |
+| sbc-blue | ![sbc-blue](./assets/shields/true_flat/sbc-blue.svg) |
 | sourcegraph | ![sourcegraph](./assets/shields/true_flat/sourcegraph.svg) |
 | sourcegraph-black | ![sourcegraph-black](./assets/shields/true_flat/sourcegraph-black.svg) |
 | sourcegraph-white | ![sourcegraph-white](./assets/shields/true_flat/sourcegraph-white.svg) |
+
 
 #### Available Styles
 - flat
