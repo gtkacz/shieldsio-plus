@@ -74,7 +74,7 @@ def script() -> None:
 		raise ValueError(f"Output path format does not match the output format: {args}.")
 
 	if args.output_format == "json":
-		output_method = partial(df_pprint_to_json, orient="records", indent=4)
+		output_method = partial(pd.DataFrame.to_json, orient="records")
 	elif args.output_format == "csv":
 		output_method = partial(pd.DataFrame.to_csv, index=False)
 	else:
@@ -93,6 +93,7 @@ def script() -> None:
 	all_colors["rgba"] = all_colors["hex"].apply(HexColor.to_rgba)
 	all_colors["hsl"] = all_colors["hex"].apply(HexColor.to_hsl)
 	all_colors["hsla"] = all_colors["hex"].apply(HexColor.to_hsla)
+	all_colors["hex"] = all_colors["hex"].apply(str)
 
 	output_method(all_colors, args.output_path)
 
