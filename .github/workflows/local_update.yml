@@ -24,8 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         curl -LsSf https://astral.sh/uv/install.sh | sh
-        uv pip install --system -r docs/requirements.scripts.txt
-        uv pip install --system -r docs/requirements.txt
+        uv pip install --system -r requirements.scripts.txt
 
     - name: Run script to update README table
       run: |
