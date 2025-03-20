@@ -39,6 +39,7 @@ def script() -> None:
 			seen.add(slug)
 			unique_slugs.append(slug)
 
+	unique_slugs.sort()
 	new_table_lines = []
 	new_table_lines.append("| Slug | Sample |")
 	new_table_lines.append("| --- | --- |")

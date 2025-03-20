@@ -1,6 +1,7 @@
 import concurrent.futures
 from collections.abc import Sequence
 from json import dump as json_dump
+from operator import itemgetter
 from pathlib import Path
 
 from src.common.types.shields_io_badge import ShieldsIOBadge
@@ -30,5 +31,5 @@ def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: st
 		for future in concurrent.futures.as_completed(futures):
 			future.result()
 
-	with open(Path(json_path).resolve(), "w+") as f:
-		json_dump(badges, f, indent=4)
+	with open(Path(json_path).resolve(), "w") as f:
+		json_dump(sorted(badges, key=itemgetter("slug")), f, indent=4)
