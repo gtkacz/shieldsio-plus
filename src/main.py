@@ -3,7 +3,7 @@ import pathlib
 from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyles
 from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_badge import ShieldsIOBadge
-from src.util import read_svg
+from src.common.types.svg import SVG
 from src.util.download_shieldsio_badges import download_shields_io_badges
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
@@ -22,7 +22,7 @@ def main():
 					slug=slug,
 					label=display_text,
 					color=HexColor(bg_color),
-					logo=read_svg(svg),
+					logo=SVG.from_file(svg),
 					style=ShieldsIOBadgeStyles[style.name],
 				),
 			)
