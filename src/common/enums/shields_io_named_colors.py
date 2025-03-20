@@ -1,21 +1,17 @@
-from typing import Tuple
-
 from src.common.enums.better_enum import BetterEnum
-from src.common.types.hex_code import HexCode
-
-ShieldsIONamedColorsValue = Tuple[str, HexCode]
+from src.common.types.hex_code import HexColor
 
 
 class ShieldsIONamedColors(BetterEnum):
-	BRIGHTGREEN: ShieldsIONamedColorsValue = ("brightgreen", HexCode("#4c1"))
-	GREEN: ShieldsIONamedColorsValue = ("green", HexCode("#97ca00"))
-	YELLOW: ShieldsIONamedColorsValue = ("yellow", HexCode("#dfb317"))
-	YELLOWGREEN: ShieldsIONamedColorsValue = ("yellowgreen", HexCode("#a4a61d"))
-	ORANGE: ShieldsIONamedColorsValue = ("orange", HexCode("#fe7d37"))
-	RED: ShieldsIONamedColorsValue = ("red", HexCode("#e05d44"))
-	BLUE: ShieldsIONamedColorsValue = ("blue", HexCode("#007ec6"))
-	GREY: ShieldsIONamedColorsValue = ("grey", HexCode("#555"))
-	LIGHTGREY: ShieldsIONamedColorsValue = ("lightgrey", HexCode("#9f9f9f"))
+	BRIGHTGREEN = ("brightgreen", HexColor("#4c1"))
+	GREEN = ("green", HexColor("#97ca00"))
+	YELLOW = ("yellow", HexColor("#dfb317"))
+	YELLOWGREEN = ("yellowgreen", HexColor("#a4a61d"))
+	ORANGE = ("orange", HexColor("#fe7d37"))
+	RED = ("red", HexColor("#e05d44"))
+	BLUE = ("blue", HexColor("#007ec6"))
+	GREY = ("grey", HexColor("#555"))
+	LIGHTGREY = ("lightgrey", HexColor("#9f9f9f"))
 
 	# aliases
 	GRAY = GREY

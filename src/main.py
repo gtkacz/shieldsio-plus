@@ -1,7 +1,7 @@
 import pathlib
 
 from src.common.types.esio_file import ESIOFile
-from src.common.types.hex_code import HexCode
+from src.common.types.hex_code import HexColor
 from src.util import svg_to_base64
 from src.util.download_shieldsio_badges import download_shields_io_badges
 
@@ -19,9 +19,9 @@ def main():
 			ESIOFile(
 				slug,
 				display_text,
-				HexCode(bg_color),
+				HexColor(bg_color),
 				svg_to_base64(svg),
-			)
+			),
 		)
 
 	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields")

@@ -1,6 +1,6 @@
 from typing import Union
 
 from src.common.enums import ShieldsIONamedColors
-from src.common.types.hex_code import HexCode
+from src.common.types.hex_code import HexColor
 
-ShieldsIOColor = Union[ShieldsIONamedColors, HexCode]
+ShieldsIOColor = Union[ShieldsIONamedColors, HexColor]

@@ -1,5 +1,5 @@
 import concurrent.futures
-from typing import Sequence
+from collections.abc import Sequence
 
 from src.common.types.esio_file import ESIOFile
 

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from src.common.types.hex_code import HexCode
+from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_badge import ShieldsIOBadge
 from src.util import is_valid_base_64
 
@@ -9,7 +9,7 @@ from src.util import is_valid_base_64
 class ESIOFile:
 	slug: str
 	display_text: str
-	bg_color: HexCode
+	bg_color: HexColor
 	base64: bytes
 
 	def __post_init__(self):

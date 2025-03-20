@@ -8,8 +8,7 @@ def is_valid_hex_code(code: str) -> bool:
 	Returns:
 		bool: True if the hex code is valid, False otherwise.
 	"""
-	if code.startswith("#"):
-		code = code[1:]
+	code = code.removeprefix("#")
 
 	if not code or not (len(code) == 3 or len(code) == 6):
 		return False

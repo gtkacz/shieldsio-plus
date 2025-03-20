@@ -1,7 +1,14 @@
-- Figure out circular imports from src\common\types\__init__.py
+- WRITE TESTS!!!!!
+- Fix all Ruff checks
+- Make project installable
+- Write SVG info to a json after downloading
+- Create CLI interface
+- Figure out circular imports
+- Add support to rgb, rgba, hsl, hsla and css named colors (see src\common\types\hex_code.py)
 - Download all icons from https://shields.io/blog/simple-icons-14
 - Create builder like shields.io
 - Create script to automatically update README
 - Create script to automatically fetch named colors from https://github.com/badges/shields/blob/master/badge-maker/lib/color.js
 - Support usable icons
 - Create script to automatically fetch usable icons from https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json
+- Generate CI pipeline to generate all badges from assets/icons

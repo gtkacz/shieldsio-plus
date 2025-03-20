@@ -7,7 +7,7 @@ from urllib.parse import urlencode
 import requests
 
 from src.common.enums import ShieldsIOBadgeTypes, ShieldsIONamedColors
-from src.common.types.hex_code import HexCode
+from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_color import ShieldsIOColor
 from src.util import is_valid_base_64
 
@@ -41,7 +41,7 @@ class ShieldsIOBadge:
 			if isinstance(color_obj, ShieldsIONamedColors):
 				return color_obj.slug.replace("#", "")
 
-			elif isinstance(color_obj, HexCode):
+			if isinstance(color_obj, HexColor):
 				return color_obj.hex.replace("#", "")
 
 			raise ValueError(f"Invalid color object: {color_obj}")
@@ -71,5 +71,15 @@ class ShieldsIOBadge:
 	def download_shieldsio_badge(self, path: str) -> None:
 		img_data = requests.get(self.build_shieldsio_url()).content
 
-		with open(Path(path, self.slug), "wb") as handler:
+		with open(Path(path, self.slug + ".svg"), "wb") as handler:
 			handler.write(img_data)
+
+	def to_json(self) -> dict:
+		return {
+			"slug": self.slug,
+			"label": self.label,
+			"message": self.message,
+			"style": self.style.value,
+			"color": self.__color,
+			"label_color": self.__label_color,
+		}

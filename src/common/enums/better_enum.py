@@ -4,20 +4,8 @@ from typing import List
 
 class __MetaEnum(EnumMeta):
 	"""
-	Metaclass for `BetterEnum`. Allows to add a prefix to all the values of an enum.
-	Also adds `names` and `values` properties to the enum.
+	Metaclass for `BetterEnum`. Adds `names` and `values` properties to the enum.
 	"""
-
-	def __new__(metacls, cls, bases, classdict, **kwargs):  # noqa: ANN001, ANN003, ANN204, D102
-		prefix = kwargs.pop("prefix", "")
-
-		enum_class = super().__new__(metacls, cls, bases, classdict, **kwargs)
-
-		for member in enum_class.__members__.values():
-			if isinstance(member._value_, str):
-				member._value_ = prefix + member._value_
-
-		return enum_class
 
 	@property
 	def names(cls) -> List[str]:
