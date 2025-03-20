@@ -1,6 +1,6 @@
 import pathlib
 
-from src.common.enums.shields_io_badge_types import ShieldsIOBadgeStyles
+from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyles
 from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_badge import ShieldsIOBadge
 from src.util import read_svg

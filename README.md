@@ -17,13 +17,27 @@ This utility simplifies the creation and customization of badges that can be use
 ### Basic Usage
 
 #### Static API
-To use this repository as a static API, all you need to do is pass the `slug` you want to the URL: `https://raw.githubusercontent.com/gtkacz/extra-shieldsio-badges/refs/heads/main/assets/shields/{slug}.svg`. To add more icons to the static API, see [below](#filename-convention).
+To use this repository as a static API, all you need to do is pass the `slug` you want to the URL: `https://raw.githubusercontent.com/gtkacz/extra-shieldsio-badges/refs/heads/main/assets/shields/{style}/{slug}.svg`. To add more icons to the static API, see [below](#filename-convention).
 
 #### Available Slugs
-- linkedin
-- linkedin-white
-- orcid
-- orcid-white
+
+| Slug | Sample |
+| --- | --- |
+| linkedin-blue-logo | ![linkedin-blue-logo](./assets/shields/true_flat/linkedin-blue-logo.svg) |
+| linkedin-blue | ![linkedin-blue](./assets/shields/true_flat/linkedin-blue.svg) |
+| linkedin-white-logo | ![linkedin-white-logo](./assets/shields/true_flat/linkedin-white-logo.svg) |
+| linkedin-white | ![linkedin-white](./assets/shields/true_flat/linkedin-white.svg) |
+| orcid-white | ![orcid-white](./assets/shields/true_flat/orcid-white.svg) |
+| orcid | ![orcid](./assets/shields/true_flat/orcid.svg) |
+
+#### Available Styles
+- flat
+- flat_square
+- plastic
+- for_the_badge
+- social
+- true_flat
+- true_flat_square
 
 ## Expanding
 
