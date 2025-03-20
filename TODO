@@ -1,4 +1,5 @@
 - WRITE TESTS!!!!!
+- Fix README (expose as an API, PR guidelines)
 - Fix all Ruff checks
 - Make project installable
 - Write SVG info to a json after downloading
@@ -12,3 +13,4 @@
 - Support usable icons
 - Create script to automatically fetch usable icons from https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json
 - Generate CI pipeline to generate all badges from assets/icons
+- Turn CLI into Google's Fire
