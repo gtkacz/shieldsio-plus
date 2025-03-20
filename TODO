@@ -1,3 +1,4 @@
+- Figure out circular imports from src\common\types\__init__.py
 - Download all icons from https://shields.io/blog/simple-icons-14
 - Create builder like shields.io
 - Create script to automatically update README
