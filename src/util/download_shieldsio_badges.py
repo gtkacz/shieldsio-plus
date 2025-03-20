@@ -3,7 +3,6 @@ from collections.abc import Sequence
 from json import dump as json_dump
 from operator import itemgetter
 from pathlib import Path
-from shutil import rmtree
 
 from src.common.types.shields_io_badge import ShieldsIOBadge
 
@@ -18,12 +17,6 @@ def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: st
 	"""
 	badges = []
 	badge_path = str(Path(badge_path).resolve())
-
-	for path in Path(badge_path).glob("**/*"):
-		if path.is_file() and not path.name.startswith(".gitignore"):
-			path.unlink()
-		elif path.is_dir():
-			rmtree(path)
 
 	def _download_single_badge(badge: ShieldsIOBadge) -> None:
 		badge.download_shieldsio_badge(badge_path)
