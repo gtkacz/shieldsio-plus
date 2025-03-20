@@ -1,7 +1,8 @@
 from src.common.enums.better_enum import BetterStrEnum
 
 
-class ShieldsIOBadgeTypes(BetterStrEnum):
+class ShieldsIOBadgeStyles(BetterStrEnum):
+	TRUE_FLAT = "flat"
 	FLAT = "flat"
 	FLAT_SQUARE = "flat-square"
 	PLASTIC = "plastic"

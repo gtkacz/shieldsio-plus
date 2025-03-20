@@ -14,3 +14,7 @@
 - Create script to automatically fetch usable icons from https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json
 - Generate CI pipeline to generate all badges from assets/icons
 - Turn CLI into Google's Fire
+- Create a method to turn off gradients on flat?
+- Allow more parameters from filenames or json
+- Use loguru?
+- Support more fonts: https://www.w3schools.com/cssref/css_websafe_fonts.php

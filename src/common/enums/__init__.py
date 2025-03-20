@@ -1,2 +1,2 @@
-from .shields_io_badge_types import ShieldsIOBadgeTypes
+from .shields_io_badge_types import ShieldsIOBadgeStyles
 from .shields_io_named_colors import ShieldsIONamedColors
