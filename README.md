@@ -25,6 +25,8 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | --- | --- |
 | gogs | ![gogs](./assets/shields/true_flat/gogs.svg) |
 | gogs-white | ![gogs-white](./assets/shields/true_flat/gogs-white.svg) |
+| ieee | ![ieee](./assets/shields/true_flat/ieee.svg) |
+| ieee-white | ![ieee-white](./assets/shields/true_flat/ieee-white.svg) |
 | linkedin-blue | ![linkedin-blue](./assets/shields/true_flat/linkedin-blue.svg) |
 | linkedin-blue-logo | ![linkedin-blue-logo](./assets/shields/true_flat/linkedin-blue-logo.svg) |
 | linkedin-white | ![linkedin-white](./assets/shields/true_flat/linkedin-white.svg) |
