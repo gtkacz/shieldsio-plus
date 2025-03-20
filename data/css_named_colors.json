@@ -1,7 +1,7 @@
 [
   {
     "slug": "black",
-    "hex": "HexColor(value='000000')",
+    "hex": "#000000",
     "rgb": [0, 0, 0],
     "rgba": [0, 0, 0, 1.0],
     "hsl": [0, 0, 0],
@@ -9,7 +9,7 @@
   },
   {
     "slug": "silver",
-    "hex": "HexColor(value='c0c0c0')",
+    "hex": "#c0c0c0",
     "rgb": [192, 192, 192],
     "rgba": [192, 192, 192, 1.0],
     "hsl": [0, 0, 75],
@@ -17,7 +17,7 @@
   },
   {
     "slug": "gray",
-    "hex": "HexColor(value='808080')",
+    "hex": "#808080",
     "rgb": [128, 128, 128],
     "rgba": [128, 128, 128, 1.0],
     "hsl": [0, 0, 50],
@@ -25,7 +25,7 @@
   },
   {
     "slug": "white",
-    "hex": "HexColor(value='ffffff')",
+    "hex": "#ffffff",
     "rgb": [255, 255, 255],
     "rgba": [255, 255, 255, 1.0],
     "hsl": [0, 0, 100],
@@ -33,7 +33,7 @@
   },
   {
     "slug": "maroon",
-    "hex": "HexColor(value='800000')",
+    "hex": "#800000",
     "rgb": [128, 0, 0],
     "rgba": [128, 0, 0, 1.0],
     "hsl": [0, 100, 25],
@@ -41,7 +41,7 @@
   },
   {
     "slug": "red",
-    "hex": "HexColor(value='ff0000')",
+    "hex": "#ff0000",
     "rgb": [255, 0, 0],
     "rgba": [255, 0, 0, 1.0],
     "hsl": [0, 100, 50],
@@ -49,7 +49,7 @@
   },
   {
     "slug": "purple",
-    "hex": "HexColor(value='800080')",
+    "hex": "#800080",
     "rgb": [128, 0, 128],
     "rgba": [128, 0, 128, 1.0],
     "hsl": [300, 100, 25],
@@ -57,7 +57,7 @@
   },
   {
     "slug": "fuchsia",
-    "hex": "HexColor(value='ff00ff')",
+    "hex": "#ff00ff",
     "rgb": [255, 0, 255],
     "rgba": [255, 0, 255, 1.0],
     "hsl": [300, 100, 50],
@@ -65,7 +65,7 @@
   },
   {
     "slug": "green",
-    "hex": "HexColor(value='008000')",
+    "hex": "#008000",
     "rgb": [0, 128, 0],
     "rgba": [0, 128, 0, 1.0],
     "hsl": [120, 100, 25],
@@ -73,7 +73,7 @@
   },
   {
     "slug": "lime",
-    "hex": "HexColor(value='00ff00')",
+    "hex": "#00ff00",
     "rgb": [0, 255, 0],
     "rgba": [0, 255, 0, 1.0],
     "hsl": [120, 100, 50],
@@ -81,7 +81,7 @@
   },
   {
     "slug": "olive",
-    "hex": "HexColor(value='808000')",
+    "hex": "#808000",
     "rgb": [128, 128, 0],
     "rgba": [128, 128, 0, 1.0],
     "hsl": [60, 100, 25],
@@ -89,7 +89,7 @@
   },
   {
     "slug": "yellow",
-    "hex": "HexColor(value='ffff00')",
+    "hex": "#ffff00",
     "rgb": [255, 255, 0],
     "rgba": [255, 255, 0, 1.0],
     "hsl": [60, 100, 50],
@@ -97,7 +97,7 @@
   },
   {
     "slug": "navy",
-    "hex": "HexColor(value='000080')",
+    "hex": "#000080",
     "rgb": [0, 0, 128],
     "rgba": [0, 0, 128, 1.0],
     "hsl": [240, 100, 25],
@@ -105,7 +105,7 @@
   },
   {
     "slug": "blue",
-    "hex": "HexColor(value='0000ff')",
+    "hex": "#0000ff",
     "rgb": [0, 0, 255],
     "rgba": [0, 0, 255, 1.0],
     "hsl": [240, 100, 50],
@@ -113,7 +113,7 @@
   },
   {
     "slug": "teal",
-    "hex": "HexColor(value='008080')",
+    "hex": "#008080",
     "rgb": [0, 128, 128],
     "rgba": [0, 128, 128, 1.0],
     "hsl": [180, 100, 25],
@@ -121,7 +121,7 @@
   },
   {
     "slug": "aqua",
-    "hex": "HexColor(value='00ffff')",
+    "hex": "#00ffff",
     "rgb": [0, 255, 255],
     "rgba": [0, 255, 255, 1.0],
     "hsl": [180, 100, 50],
@@ -129,7 +129,7 @@
   },
   {
     "slug": "aliceblue",
-    "hex": "HexColor(value='f0f8ff')",
+    "hex": "#f0f8ff",
     "rgb": [240, 248, 255],
     "rgba": [240, 248, 255, 1.0],
     "hsl": [208, 100, 97],
@@ -137,7 +137,7 @@
   },
   {
     "slug": "antiquewhite",
-    "hex": "HexColor(value='faebd7')",
+    "hex": "#faebd7",
     "rgb": [250, 235, 215],
     "rgba": [250, 235, 215, 1.0],
     "hsl": [34, 78, 91],
@@ -145,7 +145,7 @@
   },
   {
     "slug": "aqua",
-    "hex": "HexColor(value='00ffff')",
+    "hex": "#00ffff",
     "rgb": [0, 255, 255],
     "rgba": [0, 255, 255, 1.0],
     "hsl": [180, 100, 50],
@@ -153,7 +153,7 @@
   },
   {
     "slug": "aquamarine",
-    "hex": "HexColor(value='7fffd4')",
+    "hex": "#7fffd4",
     "rgb": [127, 255, 212],
     "rgba": [127, 255, 212, 1.0],
     "hsl": [160, 100, 75],
@@ -161,7 +161,7 @@
   },
   {
     "slug": "azure",
-    "hex": "HexColor(value='f0ffff')",
+    "hex": "#f0ffff",
     "rgb": [240, 255, 255],
     "rgba": [240, 255, 255, 1.0],
     "hsl": [180, 100, 97],
@@ -169,7 +169,7 @@
   },
   {
     "slug": "beige",
-    "hex": "HexColor(value='f5f5dc')",
+    "hex": "#f5f5dc",
     "rgb": [245, 245, 220],
     "rgba": [245, 245, 220, 1.0],
     "hsl": [60, 56, 91],
@@ -177,7 +177,7 @@
   },
   {
     "slug": "bisque",
-    "hex": "HexColor(value='ffe4c4')",
+    "hex": "#ffe4c4",
     "rgb": [255, 228, 196],
     "rgba": [255, 228, 196, 1.0],
     "hsl": [33, 100, 88],
@@ -185,7 +185,7 @@
   },
   {
     "slug": "black",
-    "hex": "HexColor(value='000000')",
+    "hex": "#000000",
     "rgb": [0, 0, 0],
     "rgba": [0, 0, 0, 1.0],
     "hsl": [0, 0, 0],
@@ -193,7 +193,7 @@
   },
   {
     "slug": "blanchedalmond",
-    "hex": "HexColor(value='ffebcd')",
+    "hex": "#ffebcd",
     "rgb": [255, 235, 205],
     "rgba": [255, 235, 205, 1.0],
     "hsl": [36, 100, 90],
@@ -201,7 +201,7 @@
   },
   {
     "slug": "blue",
-    "hex": "HexColor(value='0000ff')",
+    "hex": "#0000ff",
     "rgb": [0, 0, 255],
     "rgba": [0, 0, 255, 1.0],
     "hsl": [240, 100, 50],
@@ -209,7 +209,7 @@
   },
   {
     "slug": "blueviolet",
-    "hex": "HexColor(value='8a2be2')",
+    "hex": "#8a2be2",
     "rgb": [138, 43, 226],
     "rgba": [138, 43, 226, 1.0],
     "hsl": [271, 76, 53],
@@ -217,7 +217,7 @@
   },
   {
     "slug": "brown",
-    "hex": "HexColor(value='a52a2a')",
+    "hex": "#a52a2a",
     "rgb": [165, 42, 42],
     "rgba": [165, 42, 42, 1.0],
     "hsl": [0, 59, 41],
@@ -225,7 +225,7 @@
   },
   {
     "slug": "burlywood",
-    "hex": "HexColor(value='deb887')",
+    "hex": "#deb887",
     "rgb": [222, 184, 135],
     "rgba": [222, 184, 135, 1.0],
     "hsl": [34, 57, 70],
@@ -233,7 +233,7 @@
   },
   {
     "slug": "cadetblue",
-    "hex": "HexColor(value='5f9ea0')",
+    "hex": "#5f9ea0",
     "rgb": [95, 158, 160],
     "rgba": [95, 158, 160, 1.0],
     "hsl": [182, 25, 50],
@@ -241,7 +241,7 @@
   },
   {
     "slug": "chartreuse",
-    "hex": "HexColor(value='7fff00')",
+    "hex": "#7fff00",
     "rgb": [127, 255, 0],
     "rgba": [127, 255, 0, 1.0],
     "hsl": [90, 100, 50],
@@ -249,7 +249,7 @@
   },
   {
     "slug": "chocolate",
-    "hex": "HexColor(value='d2691e')",
+    "hex": "#d2691e",
     "rgb": [210, 105, 30],
     "rgba": [210, 105, 30, 1.0],
     "hsl": [25, 75, 47],
@@ -257,7 +257,7 @@
   },
   {
     "slug": "coral",
-    "hex": "HexColor(value='ff7f50')",
+    "hex": "#ff7f50",
     "rgb": [255, 127, 80],
     "rgba": [255, 127, 80, 1.0],
     "hsl": [16, 100, 66],
@@ -265,7 +265,7 @@
   },
   {
     "slug": "cornflowerblue",
-    "hex": "HexColor(value='6495ed')",
+    "hex": "#6495ed",
     "rgb": [100, 149, 237],
     "rgba": [100, 149, 237, 1.0],
     "hsl": [219, 79, 66],
@@ -273,7 +273,7 @@
   },
   {
     "slug": "cornsilk",
-    "hex": "HexColor(value='fff8dc')",
+    "hex": "#fff8dc",
     "rgb": [255, 248, 220],
     "rgba": [255, 248, 220, 1.0],
     "hsl": [48, 100, 93],
@@ -281,7 +281,7 @@
   },
   {
     "slug": "crimson",
-    "hex": "HexColor(value='dc143c')",
+    "hex": "#dc143c",
     "rgb": [220, 20, 60],
     "rgba": [220, 20, 60, 1.0],
     "hsl": [348, 83, 47],
@@ -289,7 +289,7 @@
   },
   {
     "slug": "cyan",
-    "hex": "HexColor(value='00ffff')",
+    "hex": "#00ffff",
     "rgb": [0, 255, 255],
     "rgba": [0, 255, 255, 1.0],
     "hsl": [180, 100, 50],
@@ -297,7 +297,7 @@
   },
   {
     "slug": "darkblue",
-    "hex": "HexColor(value='00008b')",
+    "hex": "#00008b",
     "rgb": [0, 0, 139],
     "rgba": [0, 0, 139, 1.0],
     "hsl": [240, 100, 27],
@@ -305,7 +305,7 @@
   },
   {
     "slug": "darkcyan",
-    "hex": "HexColor(value='008b8b')",
+    "hex": "#008b8b",
     "rgb": [0, 139, 139],
     "rgba": [0, 139, 139, 1.0],
     "hsl": [180, 100, 27],
@@ -313,7 +313,7 @@
   },
   {
     "slug": "darkgoldenrod",
-    "hex": "HexColor(value='b8860b')",
+    "hex": "#b8860b",
     "rgb": [184, 134, 11],
     "rgba": [184, 134, 11, 1.0],
     "hsl": [43, 89, 38],
@@ -321,7 +321,7 @@
   },
   {
     "slug": "darkgray",
-    "hex": "HexColor(value='a9a9a9')",
+    "hex": "#a9a9a9",
     "rgb": [169, 169, 169],
     "rgba": [169, 169, 169, 1.0],
     "hsl": [0, 0, 66],
@@ -329,7 +329,7 @@
   },
   {
     "slug": "darkgreen",
-    "hex": "HexColor(value='006400')",
+    "hex": "#006400",
     "rgb": [0, 100, 0],
     "rgba": [0, 100, 0, 1.0],
     "hsl": [120, 100, 20],
@@ -337,7 +337,7 @@
   },
   {
     "slug": "darkgrey",
-    "hex": "HexColor(value='a9a9a9')",
+    "hex": "#a9a9a9",
     "rgb": [169, 169, 169],
     "rgba": [169, 169, 169, 1.0],
     "hsl": [0, 0, 66],
@@ -345,7 +345,7 @@
   },
   {
     "slug": "darkkhaki",
-    "hex": "HexColor(value='bdb76b')",
+    "hex": "#bdb76b",
     "rgb": [189, 183, 107],
     "rgba": [189, 183, 107, 1.0],
     "hsl": [56, 38, 58],
@@ -353,7 +353,7 @@
   },
   {
     "slug": "darkmagenta",
-    "hex": "HexColor(value='8b008b')",
+    "hex": "#8b008b",
     "rgb": [139, 0, 139],
     "rgba": [139, 0, 139, 1.0],
     "hsl": [300, 100, 27],
@@ -361,7 +361,7 @@
   },
   {
     "slug": "darkolivegreen",
-    "hex": "HexColor(value='556b2f')",
+    "hex": "#556b2f",
     "rgb": [85, 107, 47],
     "rgba": [85, 107, 47, 1.0],
     "hsl": [82, 39, 30],
@@ -369,7 +369,7 @@
   },
   {
     "slug": "darkorange",
-    "hex": "HexColor(value='ff8c00')",
+    "hex": "#ff8c00",
     "rgb": [255, 140, 0],
     "rgba": [255, 140, 0, 1.0],
     "hsl": [33, 100, 50],
@@ -377,7 +377,7 @@
   },
   {
     "slug": "darkorchid",
-    "hex": "HexColor(value='9932cc')",
+    "hex": "#9932cc",
     "rgb": [153, 50, 204],
     "rgba": [153, 50, 204, 1.0],
     "hsl": [280, 61, 50],
@@ -385,7 +385,7 @@
   },
   {
     "slug": "darkred",
-    "hex": "HexColor(value='8b0000')",
+    "hex": "#8b0000",
     "rgb": [139, 0, 0],
     "rgba": [139, 0, 0, 1.0],
     "hsl": [0, 100, 27],
@@ -393,7 +393,7 @@
   },
   {
     "slug": "darksalmon",
-    "hex": "HexColor(value='e9967a')",
+    "hex": "#e9967a",
     "rgb": [233, 150, 122],
     "rgba": [233, 150, 122, 1.0],
     "hsl": [15, 72, 70],
@@ -401,7 +401,7 @@
   },
   {
     "slug": "darkseagreen",
-    "hex": "HexColor(value='8fbc8f')",
+    "hex": "#8fbc8f",
     "rgb": [143, 188, 143],
     "rgba": [143, 188, 143, 1.0],
     "hsl": [120, 25, 65],
@@ -409,7 +409,7 @@
   },
   {
     "slug": "darkslateblue",
-    "hex": "HexColor(value='483d8b')",
+    "hex": "#483d8b",
     "rgb": [72, 61, 139],
     "rgba": [72, 61, 139, 1.0],
     "hsl": [248, 39, 39],
@@ -417,7 +417,7 @@
   },
   {
     "slug": "darkslategray",
-    "hex": "HexColor(value='2f4f4f')",
+    "hex": "#2f4f4f",
     "rgb": [47, 79, 79],
     "rgba": [47, 79, 79, 1.0],
     "hsl": [180, 25, 25],
@@ -425,7 +425,7 @@
   },
   {
     "slug": "darkslategrey",
-    "hex": "HexColor(value='2f4f4f')",
+    "hex": "#2f4f4f",
     "rgb": [47, 79, 79],
     "rgba": [47, 79, 79, 1.0],
     "hsl": [180, 25, 25],
@@ -433,7 +433,7 @@
   },
   {
     "slug": "darkturquoise",
-    "hex": "HexColor(value='00ced1')",
+    "hex": "#00ced1",
     "rgb": [0, 206, 209],
     "rgba": [0, 206, 209, 1.0],
     "hsl": [181, 100, 41],
@@ -441,7 +441,7 @@
   },
   {
     "slug": "darkviolet",
-    "hex": "HexColor(value='9400d3')",
+    "hex": "#9400d3",
     "rgb": [148, 0, 211],
     "rgba": [148, 0, 211, 1.0],
     "hsl": [282, 100, 41],
@@ -449,7 +449,7 @@
   },
   {
     "slug": "deeppink",
-    "hex": "HexColor(value='ff1493')",
+    "hex": "#ff1493",
     "rgb": [255, 20, 147],
     "rgba": [255, 20, 147, 1.0],
     "hsl": [328, 100, 54],
@@ -457,7 +457,7 @@
   },
   {
     "slug": "deepskyblue",
-    "hex": "HexColor(value='00bfff')",
+    "hex": "#00bfff",
     "rgb": [0, 191, 255],
     "rgba": [0, 191, 255, 1.0],
     "hsl": [195, 100, 50],
@@ -465,7 +465,7 @@
   },
   {
     "slug": "dimgray",
-    "hex": "HexColor(value='696969')",
+    "hex": "#696969",
     "rgb": [105, 105, 105],
     "rgba": [105, 105, 105, 1.0],
     "hsl": [0, 0, 41],
@@ -473,7 +473,7 @@
   },
   {
     "slug": "dimgrey",
-    "hex": "HexColor(value='696969')",
+    "hex": "#696969",
     "rgb": [105, 105, 105],
     "rgba": [105, 105, 105, 1.0],
     "hsl": [0, 0, 41],
@@ -481,7 +481,7 @@
   },
   {
     "slug": "dodgerblue",
-    "hex": "HexColor(value='1e90ff')",
+    "hex": "#1e90ff",
     "rgb": [30, 144, 255],
     "rgba": [30, 144, 255, 1.0],
     "hsl": [210, 100, 56],
@@ -489,7 +489,7 @@
   },
   {
     "slug": "firebrick",
-    "hex": "HexColor(value='b22222')",
+    "hex": "#b22222",
     "rgb": [178, 34, 34],
     "rgba": [178, 34, 34, 1.0],
     "hsl": [0, 68, 42],
@@ -497,7 +497,7 @@
   },
   {
     "slug": "floralwhite",
-    "hex": "HexColor(value='fffaf0')",
+    "hex": "#fffaf0",
     "rgb": [255, 250, 240],
     "rgba": [255, 250, 240, 1.0],
     "hsl": [40, 100, 97],
@@ -505,7 +505,7 @@
   },
   {
     "slug": "forestgreen",
-    "hex": "HexColor(value='228b22')",
+    "hex": "#228b22",
     "rgb": [34, 139, 34],
     "rgba": [34, 139, 34, 1.0],
     "hsl": [120, 61, 34],
@@ -513,7 +513,7 @@
   },
   {
     "slug": "fuchsia",
-    "hex": "HexColor(value='ff00ff')",
+    "hex": "#ff00ff",
     "rgb": [255, 0, 255],
     "rgba": [255, 0, 255, 1.0],
     "hsl": [300, 100, 50],
@@ -521,7 +521,7 @@
   },
   {
     "slug": "gainsboro",
-    "hex": "HexColor(value='dcdcdc')",
+    "hex": "#dcdcdc",
     "rgb": [220, 220, 220],
     "rgba": [220, 220, 220, 1.0],
     "hsl": [0, 0, 86],
@@ -529,7 +529,7 @@
   },
   {
     "slug": "ghostwhite",
-    "hex": "HexColor(value='f8f8ff')",
+    "hex": "#f8f8ff",
     "rgb": [248, 248, 255],
     "rgba": [248, 248, 255, 1.0],
     "hsl": [240, 100, 99],
@@ -537,7 +537,7 @@
   },
   {
     "slug": "gold",
-    "hex": "HexColor(value='ffd700')",
+    "hex": "#ffd700",
     "rgb": [255, 215, 0],
     "rgba": [255, 215, 0, 1.0],
     "hsl": [51, 100, 50],
@@ -545,7 +545,7 @@
   },
   {
     "slug": "goldenrod",
-    "hex": "HexColor(value='daa520')",
+    "hex": "#daa520",
     "rgb": [218, 165, 32],
     "rgba": [218, 165, 32, 1.0],
     "hsl": [43, 74, 49],
@@ -553,7 +553,7 @@
   },
   {
     "slug": "gray",
-    "hex": "HexColor(value='808080')",
+    "hex": "#808080",
     "rgb": [128, 128, 128],
     "rgba": [128, 128, 128, 1.0],
     "hsl": [0, 0, 50],
@@ -561,7 +561,7 @@
   },
   {
     "slug": "green",
-    "hex": "HexColor(value='008000')",
+    "hex": "#008000",
     "rgb": [0, 128, 0],
     "rgba": [0, 128, 0, 1.0],
     "hsl": [120, 100, 25],
@@ -569,7 +569,7 @@
   },
   {
     "slug": "greenyellow",
-    "hex": "HexColor(value='adff2f')",
+    "hex": "#adff2f",
     "rgb": [173, 255, 47],
     "rgba": [173, 255, 47, 1.0],
     "hsl": [84, 100, 59],
@@ -577,7 +577,7 @@
   },
   {
     "slug": "grey",
-    "hex": "HexColor(value='808080')",
+    "hex": "#808080",
     "rgb": [128, 128, 128],
     "rgba": [128, 128, 128, 1.0],
     "hsl": [0, 0, 50],
@@ -585,7 +585,7 @@
   },
   {
     "slug": "honeydew",
-    "hex": "HexColor(value='f0fff0')",
+    "hex": "#f0fff0",
     "rgb": [240, 255, 240],
     "rgba": [240, 255, 240, 1.0],
     "hsl": [120, 100, 97],
@@ -593,7 +593,7 @@
   },
   {
     "slug": "hotpink",
-    "hex": "HexColor(value='ff69b4')",
+    "hex": "#ff69b4",
     "rgb": [255, 105, 180],
     "rgba": [255, 105, 180, 1.0],
     "hsl": [330, 100, 71],
@@ -601,7 +601,7 @@
   },
   {
     "slug": "indianred",
-    "hex": "HexColor(value='cd5c5c')",
+    "hex": "#cd5c5c",
     "rgb": [205, 92, 92],
     "rgba": [205, 92, 92, 1.0],
     "hsl": [0, 53, 58],
@@ -609,7 +609,7 @@
   },
   {
     "slug": "indigo",
-    "hex": "HexColor(value='4b0082')",
+    "hex": "#4b0082",
     "rgb": [75, 0, 130],
     "rgba": [75, 0, 130, 1.0],
     "hsl": [275, 100, 25],
@@ -617,7 +617,7 @@
   },
   {
     "slug": "ivory",
-    "hex": "HexColor(value='fffff0')",
+    "hex": "#fffff0",
     "rgb": [255, 255, 240],
     "rgba": [255, 255, 240, 1.0],
     "hsl": [60, 100, 97],
@@ -625,7 +625,7 @@
   },
   {
     "slug": "khaki",
-    "hex": "HexColor(value='f0e68c')",
+    "hex": "#f0e68c",
     "rgb": [240, 230, 140],
     "rgba": [240, 230, 140, 1.0],
     "hsl": [54, 77, 75],
@@ -633,7 +633,7 @@
   },
   {
     "slug": "lavender",
-    "hex": "HexColor(value='e6e6fa')",
+    "hex": "#e6e6fa",
     "rgb": [230, 230, 250],
     "rgba": [230, 230, 250, 1.0],
     "hsl": [240, 67, 94],
@@ -641,7 +641,7 @@
   },
   {
     "slug": "lavenderblush",
-    "hex": "HexColor(value='fff0f5')",
+    "hex": "#fff0f5",
     "rgb": [255, 240, 245],
     "rgba": [255, 240, 245, 1.0],
     "hsl": [340, 100, 97],
@@ -649,7 +649,7 @@
   },
   {
     "slug": "lawngreen",
-    "hex": "HexColor(value='7cfc00')",
+    "hex": "#7cfc00",
     "rgb": [124, 252, 0],
     "rgba": [124, 252, 0, 1.0],
     "hsl": [90, 100, 49],
@@ -657,7 +657,7 @@
   },
   {
     "slug": "lemonchiffon",
-    "hex": "HexColor(value='fffacd')",
+    "hex": "#fffacd",
     "rgb": [255, 250, 205],
     "rgba": [255, 250, 205, 1.0],
     "hsl": [54, 100, 90],
@@ -665,7 +665,7 @@
   },
   {
     "slug": "lightblue",
-    "hex": "HexColor(value='add8e6')",
+    "hex": "#add8e6",
     "rgb": [173, 216, 230],
     "rgba": [173, 216, 230, 1.0],
     "hsl": [195, 53, 79],
@@ -673,7 +673,7 @@
   },
   {
     "slug": "lightcoral",
-    "hex": "HexColor(value='f08080')",
+    "hex": "#f08080",
     "rgb": [240, 128, 128],
     "rgba": [240, 128, 128, 1.0],
     "hsl": [0, 79, 72],
@@ -681,7 +681,7 @@
   },
   {
     "slug": "lightcyan",
-    "hex": "HexColor(value='e0ffff')",
+    "hex": "#e0ffff",
     "rgb": [224, 255, 255],
     "rgba": [224, 255, 255, 1.0],
     "hsl": [180, 100, 94],
@@ -689,7 +689,7 @@
   },
   {
     "slug": "lightgoldenrodyellow",
-    "hex": "HexColor(value='fafad2')",
+    "hex": "#fafad2",
     "rgb": [250, 250, 210],
     "rgba": [250, 250, 210, 1.0],
     "hsl": [60, 80, 90],
@@ -697,7 +697,7 @@
   },
   {
     "slug": "lightgray",
-    "hex": "HexColor(value='d3d3d3')",
+    "hex": "#d3d3d3",
     "rgb": [211, 211, 211],
     "rgba": [211, 211, 211, 1.0],
     "hsl": [0, 0, 83],
@@ -705,7 +705,7 @@
   },
   {
     "slug": "lightgreen",
-    "hex": "HexColor(value='90ee90')",
+    "hex": "#90ee90",
     "rgb": [144, 238, 144],
     "rgba": [144, 238, 144, 1.0],
     "hsl": [120, 73, 75],
@@ -713,7 +713,7 @@
   },
   {
     "slug": "lightgrey",
-    "hex": "HexColor(value='d3d3d3')",
+    "hex": "#d3d3d3",
     "rgb": [211, 211, 211],
     "rgba": [211, 211, 211, 1.0],
     "hsl": [0, 0, 83],
@@ -721,7 +721,7 @@
   },
   {
     "slug": "lightpink",
-    "hex": "HexColor(value='ffb6c1')",
+    "hex": "#ffb6c1",
     "rgb": [255, 182, 193],
     "rgba": [255, 182, 193, 1.0],
     "hsl": [351, 100, 86],
@@ -729,7 +729,7 @@
   },
   {
     "slug": "lightsalmon",
-    "hex": "HexColor(value='ffa07a')",
+    "hex": "#ffa07a",
     "rgb": [255, 160, 122],
     "rgba": [255, 160, 122, 1.0],
     "hsl": [17, 100, 74],
@@ -737,7 +737,7 @@
   },
   {
     "slug": "lightseagreen",
-    "hex": "HexColor(value='20b2aa')",
+    "hex": "#20b2aa",
     "rgb": [32, 178, 170],
     "rgba": [32, 178, 170, 1.0],
     "hsl": [177, 70, 41],
@@ -745,7 +745,7 @@
   },
   {
     "slug": "lightskyblue",
-    "hex": "HexColor(value='87cefa')",
+    "hex": "#87cefa",
     "rgb": [135, 206, 250],
     "rgba": [135, 206, 250, 1.0],
     "hsl": [203, 92, 75],
@@ -753,7 +753,7 @@
   },
   {
     "slug": "lightslategray",
-    "hex": "HexColor(value='778899')",
+    "hex": "#778899",
     "rgb": [119, 136, 153],
     "rgba": [119, 136, 153, 1.0],
     "hsl": [210, 14, 53],
@@ -761,7 +761,7 @@
   },
   {
     "slug": "lightslategrey",
-    "hex": "HexColor(value='778899')",
+    "hex": "#778899",
     "rgb": [119, 136, 153],
     "rgba": [119, 136, 153, 1.0],
     "hsl": [210, 14, 53],
@@ -769,7 +769,7 @@
   },
   {
     "slug": "lightsteelblue",
-    "hex": "HexColor(value='b0c4de')",
+    "hex": "#b0c4de",
     "rgb": [176, 196, 222],
     "rgba": [176, 196, 222, 1.0],
     "hsl": [214, 41, 78],
@@ -777,7 +777,7 @@
   },
   {
     "slug": "lightyellow",
-    "hex": "HexColor(value='ffffe0')",
+    "hex": "#ffffe0",
     "rgb": [255, 255, 224],
     "rgba": [255, 255, 224, 1.0],
     "hsl": [60, 100, 94],
@@ -785,7 +785,7 @@
   },
   {
     "slug": "lime",
-    "hex": "HexColor(value='00ff00')",
+    "hex": "#00ff00",
     "rgb": [0, 255, 0],
     "rgba": [0, 255, 0, 1.0],
     "hsl": [120, 100, 50],
@@ -793,7 +793,7 @@
   },
   {
     "slug": "limegreen",
-    "hex": "HexColor(value='32cd32')",
+    "hex": "#32cd32",
     "rgb": [50, 205, 50],
     "rgba": [50, 205, 50, 1.0],
     "hsl": [120, 61, 50],
@@ -801,7 +801,7 @@
   },
   {
     "slug": "linen",
-    "hex": "HexColor(value='faf0e6')",
+    "hex": "#faf0e6",
     "rgb": [250, 240, 230],
     "rgba": [250, 240, 230, 1.0],
     "hsl": [30, 67, 94],
@@ -809,7 +809,7 @@
   },
   {
     "slug": "magenta",
-    "hex": "HexColor(value='ff00ff')",
+    "hex": "#ff00ff",
     "rgb": [255, 0, 255],
     "rgba": [255, 0, 255, 1.0],
     "hsl": [300, 100, 50],
@@ -817,7 +817,7 @@
   },
   {
     "slug": "maroon",
-    "hex": "HexColor(value='800000')",
+    "hex": "#800000",
     "rgb": [128, 0, 0],
     "rgba": [128, 0, 0, 1.0],
     "hsl": [0, 100, 25],
@@ -825,7 +825,7 @@
   },
   {
     "slug": "mediumaquamarine",
-    "hex": "HexColor(value='66cdaa')",
+    "hex": "#66cdaa",
     "rgb": [102, 205, 170],
     "rgba": [102, 205, 170, 1.0],
     "hsl": [160, 51, 60],
@@ -833,7 +833,7 @@
   },
   {
     "slug": "mediumblue",
-    "hex": "HexColor(value='0000cd')",
+    "hex": "#0000cd",
     "rgb": [0, 0, 205],
     "rgba": [0, 0, 205, 1.0],
     "hsl": [240, 100, 40],
@@ -841,7 +841,7 @@
   },
   {
     "slug": "mediumorchid",
-    "hex": "HexColor(value='ba55d3')",
+    "hex": "#ba55d3",
     "rgb": [186, 85, 211],
     "rgba": [186, 85, 211, 1.0],
     "hsl": [288, 59, 58],
@@ -849,7 +849,7 @@
   },
   {
     "slug": "mediumpurple",
-    "hex": "HexColor(value='9370db')",
+    "hex": "#9370db",
     "rgb": [147, 112, 219],
     "rgba": [147, 112, 219, 1.0],
     "hsl": [260, 60, 65],
@@ -857,7 +857,7 @@
   },
   {
     "slug": "mediumseagreen",
-    "hex": "HexColor(value='3cb371')",
+    "hex": "#3cb371",
     "rgb": [60, 179, 113],
     "rgba": [60, 179, 113, 1.0],
     "hsl": [147, 50, 47],
@@ -865,7 +865,7 @@
   },
   {
     "slug": "mediumslateblue",
-    "hex": "HexColor(value='7b68ee')",
+    "hex": "#7b68ee",
     "rgb": [123, 104, 238],
     "rgba": [123, 104, 238, 1.0],
     "hsl": [249, 80, 67],
@@ -873,7 +873,7 @@
   },
   {
     "slug": "mediumspringgreen",
-    "hex": "HexColor(value='00fa9a')",
+    "hex": "#00fa9a",
     "rgb": [0, 250, 154],
     "rgba": [0, 250, 154, 1.0],
     "hsl": [157, 100, 49],
@@ -881,7 +881,7 @@
   },
   {
     "slug": "mediumturquoise",
-    "hex": "HexColor(value='48d1cc')",
+    "hex": "#48d1cc",
     "rgb": [72, 209, 204],
     "rgba": [72, 209, 204, 1.0],
     "hsl": [178, 60, 55],
@@ -889,7 +889,7 @@
   },
   {
     "slug": "mediumvioletred",
-    "hex": "HexColor(value='c71585')",
+    "hex": "#c71585",
     "rgb": [199, 21, 133],
     "rgba": [199, 21, 133, 1.0],
     "hsl": [322, 81, 43],
@@ -897,7 +897,7 @@
   },
   {
     "slug": "midnightblue",
-    "hex": "HexColor(value='191970')",
+    "hex": "#191970",
     "rgb": [25, 25, 112],
     "rgba": [25, 25, 112, 1.0],
     "hsl": [240, 64, 27],
@@ -905,7 +905,7 @@
   },
   {
     "slug": "mintcream",
-    "hex": "HexColor(value='f5fffa')",
+    "hex": "#f5fffa",
     "rgb": [245, 255, 250],
     "rgba": [245, 255, 250, 1.0],
     "hsl": [150, 100, 98],
@@ -913,7 +913,7 @@
   },
   {
     "slug": "mistyrose",
-    "hex": "HexColor(value='ffe4e1')",
+    "hex": "#ffe4e1",
     "rgb": [255, 228, 225],
     "rgba": [255, 228, 225, 1.0],
     "hsl": [6, 100, 94],
@@ -921,7 +921,7 @@
   },
   {
     "slug": "moccasin",
-    "hex": "HexColor(value='ffe4b5')",
+    "hex": "#ffe4b5",
     "rgb": [255, 228, 181],
     "rgba": [255, 228, 181, 1.0],
     "hsl": [38, 100, 85],
@@ -929,7 +929,7 @@
   },
   {
     "slug": "navajowhite",
-    "hex": "HexColor(value='ffdead')",
+    "hex": "#ffdead",
     "rgb": [255, 222, 173],
     "rgba": [255, 222, 173, 1.0],
     "hsl": [36, 100, 84],
@@ -937,7 +937,7 @@
   },
   {
     "slug": "navy",
-    "hex": "HexColor(value='000080')",
+    "hex": "#000080",
     "rgb": [0, 0, 128],
     "rgba": [0, 0, 128, 1.0],
     "hsl": [240, 100, 25],
@@ -945,7 +945,7 @@
   },
   {
     "slug": "oldlace",
-    "hex": "HexColor(value='fdf5e6')",
+    "hex": "#fdf5e6",
     "rgb": [253, 245, 230],
     "rgba": [253, 245, 230, 1.0],
     "hsl": [39, 85, 95],
@@ -953,7 +953,7 @@
   },
   {
     "slug": "olive",
-    "hex": "HexColor(value='808000')",
+    "hex": "#808000",
     "rgb": [128, 128, 0],
     "rgba": [128, 128, 0, 1.0],
     "hsl": [60, 100, 25],
@@ -961,7 +961,7 @@
   },
   {
     "slug": "olivedrab",
-    "hex": "HexColor(value='6b8e23')",
+    "hex": "#6b8e23",
     "rgb": [107, 142, 35],
     "rgba": [107, 142, 35, 1.0],
     "hsl": [80, 60, 35],
@@ -969,7 +969,7 @@
   },
   {
     "slug": "orange",
-    "hex": "HexColor(value='ffa500')",
+    "hex": "#ffa500",
     "rgb": [255, 165, 0],
     "rgba": [255, 165, 0, 1.0],
     "hsl": [39, 100, 50],
@@ -977,7 +977,7 @@
   },
   {
     "slug": "orangered",
-    "hex": "HexColor(value='ff4500')",
+    "hex": "#ff4500",
     "rgb": [255, 69, 0],
     "rgba": [255, 69, 0, 1.0],
     "hsl": [16, 100, 50],
@@ -985,7 +985,7 @@
   },
   {
     "slug": "orchid",
-    "hex": "HexColor(value='da70d6')",
+    "hex": "#da70d6",
     "rgb": [218, 112, 214],
     "rgba": [218, 112, 214, 1.0],
     "hsl": [302, 59, 65],
@@ -993,7 +993,7 @@
   },
   {
     "slug": "palegoldenrod",
-    "hex": "HexColor(value='eee8aa')",
+    "hex": "#eee8aa",
     "rgb": [238, 232, 170],
     "rgba": [238, 232, 170, 1.0],
     "hsl": [55, 67, 80],
@@ -1001,7 +1001,7 @@
   },
   {
     "slug": "palegreen",
-    "hex": "HexColor(value='98fb98')",
+    "hex": "#98fb98",
     "rgb": [152, 251, 152],
     "rgba": [152, 251, 152, 1.0],
     "hsl": [120, 93, 79],
@@ -1009,7 +1009,7 @@
   },
   {
     "slug": "paleturquoise",
-    "hex": "HexColor(value='afeeee')",
+    "hex": "#afeeee",
     "rgb": [175, 238, 238],
     "rgba": [175, 238, 238, 1.0],
     "hsl": [180, 65, 81],
@@ -1017,7 +1017,7 @@
   },
   {
     "slug": "palevioletred",
-    "hex": "HexColor(value='db7093')",
+    "hex": "#db7093",
     "rgb": [219, 112, 147],
     "rgba": [219, 112, 147, 1.0],
     "hsl": [340, 60, 65],
@@ -1025,7 +1025,7 @@
   },
   {
     "slug": "papayawhip",
-    "hex": "HexColor(value='ffefd5')",
+    "hex": "#ffefd5",
     "rgb": [255, 239, 213],
     "rgba": [255, 239, 213, 1.0],
     "hsl": [37, 100, 92],
@@ -1033,7 +1033,7 @@
   },
   {
     "slug": "peachpuff",
-    "hex": "HexColor(value='ffdab9')",
+    "hex": "#ffdab9",
     "rgb": [255, 218, 185],
     "rgba": [255, 218, 185, 1.0],
     "hsl": [28, 100, 86],
@@ -1041,7 +1041,7 @@
   },
   {
     "slug": "peru",
-    "hex": "HexColor(value='cd853f')",
+    "hex": "#cd853f",
     "rgb": [205, 133, 63],
     "rgba": [205, 133, 63, 1.0],
     "hsl": [30, 59, 53],
@@ -1049,7 +1049,7 @@
   },
   {
     "slug": "pink",
-    "hex": "HexColor(value='ffc0cb')",
+    "hex": "#ffc0cb",
     "rgb": [255, 192, 203],
     "rgba": [255, 192, 203, 1.0],
     "hsl": [350, 100, 88],
@@ -1057,7 +1057,7 @@
   },
   {
     "slug": "plum",
-    "hex": "HexColor(value='dda0dd')",
+    "hex": "#dda0dd",
     "rgb": [221, 160, 221],
     "rgba": [221, 160, 221, 1.0],
     "hsl": [300, 47, 75],
@@ -1065,7 +1065,7 @@
   },
   {
     "slug": "powderblue",
-    "hex": "HexColor(value='b0e0e6')",
+    "hex": "#b0e0e6",
     "rgb": [176, 224, 230],
     "rgba": [176, 224, 230, 1.0],
     "hsl": [187, 52, 80],
@@ -1073,7 +1073,7 @@
   },
   {
     "slug": "purple",
-    "hex": "HexColor(value='800080')",
+    "hex": "#800080",
     "rgb": [128, 0, 128],
     "rgba": [128, 0, 128, 1.0],
     "hsl": [300, 100, 25],
@@ -1081,7 +1081,7 @@
   },
   {
     "slug": "rebeccapurple",
-    "hex": "HexColor(value='663399')",
+    "hex": "#663399",
     "rgb": [102, 51, 153],
     "rgba": [102, 51, 153, 1.0],
     "hsl": [270, 50, 40],
@@ -1089,7 +1089,7 @@
   },
   {
     "slug": "red",
-    "hex": "HexColor(value='ff0000')",
+    "hex": "#ff0000",
     "rgb": [255, 0, 0],
     "rgba": [255, 0, 0, 1.0],
     "hsl": [0, 100, 50],
@@ -1097,7 +1097,7 @@
   },
   {
     "slug": "rosybrown",
-    "hex": "HexColor(value='bc8f8f')",
+    "hex": "#bc8f8f",
     "rgb": [188, 143, 143],
     "rgba": [188, 143, 143, 1.0],
     "hsl": [0, 25, 65],
@@ -1105,7 +1105,7 @@
   },
   {
     "slug": "royalblue",
-    "hex": "HexColor(value='4169e1')",
+    "hex": "#4169e1",
     "rgb": [65, 105, 225],
     "rgba": [65, 105, 225, 1.0],
     "hsl": [225, 73, 57],
@@ -1113,7 +1113,7 @@
   },
   {
     "slug": "saddlebrown",
-    "hex": "HexColor(value='8b4513')",
+    "hex": "#8b4513",
     "rgb": [139, 69, 19],
     "rgba": [139, 69, 19, 1.0],
     "hsl": [25, 76, 31],
@@ -1121,7 +1121,7 @@
   },
   {
     "slug": "salmon",
-    "hex": "HexColor(value='fa8072')",
+    "hex": "#fa8072",
     "rgb": [250, 128, 114],
     "rgba": [250, 128, 114, 1.0],
     "hsl": [6, 93, 71],
@@ -1129,7 +1129,7 @@
   },
   {
     "slug": "sandybrown",
-    "hex": "HexColor(value='f4a460')",
+    "hex": "#f4a460",
     "rgb": [244, 164, 96],
     "rgba": [244, 164, 96, 1.0],
     "hsl": [28, 87, 67],
@@ -1137,7 +1137,7 @@
   },
   {
     "slug": "seagreen",
-    "hex": "HexColor(value='2e8b57')",
+    "hex": "#2e8b57",
     "rgb": [46, 139, 87],
     "rgba": [46, 139, 87, 1.0],
     "hsl": [146, 50, 36],
@@ -1145,7 +1145,7 @@
   },
   {
     "slug": "seashell",
-    "hex": "HexColor(value='fff5ee')",
+    "hex": "#fff5ee",
     "rgb": [255, 245, 238],
     "rgba": [255, 245, 238, 1.0],
     "hsl": [25, 100, 97],
@@ -1153,7 +1153,7 @@
   },
   {
     "slug": "sienna",
-    "hex": "HexColor(value='a0522d')",
+    "hex": "#a0522d",
     "rgb": [160, 82, 45],
     "rgba": [160, 82, 45, 1.0],
     "hsl": [19, 56, 40],
@@ -1161,7 +1161,7 @@
   },
   {
     "slug": "silver",
-    "hex": "HexColor(value='c0c0c0')",
+    "hex": "#c0c0c0",
     "rgb": [192, 192, 192],
     "rgba": [192, 192, 192, 1.0],
     "hsl": [0, 0, 75],
@@ -1169,7 +1169,7 @@
   },
   {
     "slug": "skyblue",
-    "hex": "HexColor(value='87ceeb')",
+    "hex": "#87ceeb",
     "rgb": [135, 206, 235],
     "rgba": [135, 206, 235, 1.0],
     "hsl": [197, 71, 73],
@@ -1177,7 +1177,7 @@
   },
   {
     "slug": "slateblue",
-    "hex": "HexColor(value='6a5acd')",
+    "hex": "#6a5acd",
     "rgb": [106, 90, 205],
     "rgba": [106, 90, 205, 1.0],
     "hsl": [248, 53, 58],
@@ -1185,7 +1185,7 @@
   },
   {
     "slug": "slategray",
-    "hex": "HexColor(value='708090')",
+    "hex": "#708090",
     "rgb": [112, 128, 144],
     "rgba": [112, 128, 144, 1.0],
     "hsl": [210, 13, 50],
@@ -1193,7 +1193,7 @@
   },
   {
     "slug": "slategrey",
-    "hex": "HexColor(value='708090')",
+    "hex": "#708090",
     "rgb": [112, 128, 144],
     "rgba": [112, 128, 144, 1.0],
     "hsl": [210, 13, 50],
@@ -1201,7 +1201,7 @@
   },
   {
     "slug": "snow",
-    "hex": "HexColor(value='fffafa')",
+    "hex": "#fffafa",
     "rgb": [255, 250, 250],
     "rgba": [255, 250, 250, 1.0],
     "hsl": [0, 100, 99],
@@ -1209,7 +1209,7 @@
   },
   {
     "slug": "springgreen",
-    "hex": "HexColor(value='00ff7f')",
+    "hex": "#00ff7f",
     "rgb": [0, 255, 127],
     "rgba": [0, 255, 127, 1.0],
     "hsl": [150, 100, 50],
@@ -1217,7 +1217,7 @@
   },
   {
     "slug": "steelblue",
-    "hex": "HexColor(value='4682b4')",
+    "hex": "#4682b4",
     "rgb": [70, 130, 180],
     "rgba": [70, 130, 180, 1.0],
     "hsl": [207, 44, 49],
@@ -1225,7 +1225,7 @@
   },
   {
     "slug": "tan",
-    "hex": "HexColor(value='d2b48c')",
+    "hex": "#d2b48c",
     "rgb": [210, 180, 140],
     "rgba": [210, 180, 140, 1.0],
     "hsl": [34, 44, 69],
@@ -1233,7 +1233,7 @@
   },
   {
     "slug": "teal",
-    "hex": "HexColor(value='008080')",
+    "hex": "#008080",
     "rgb": [0, 128, 128],
     "rgba": [0, 128, 128, 1.0],
     "hsl": [180, 100, 25],
@@ -1241,7 +1241,7 @@
   },
   {
     "slug": "thistle",
-    "hex": "HexColor(value='d8bfd8')",
+    "hex": "#d8bfd8",
     "rgb": [216, 191, 216],
     "rgba": [216, 191, 216, 1.0],
     "hsl": [300, 24, 80],
@@ -1249,7 +1249,7 @@
   },
   {
     "slug": "tomato",
-    "hex": "HexColor(value='ff6347')",
+    "hex": "#ff6347",
     "rgb": [255, 99, 71],
     "rgba": [255, 99, 71, 1.0],
     "hsl": [9, 100, 64],
@@ -1257,7 +1257,7 @@
   },
   {
     "slug": "turquoise",
-    "hex": "HexColor(value='40e0d0')",
+    "hex": "#40e0d0",
     "rgb": [64, 224, 208],
     "rgba": [64, 224, 208, 1.0],
     "hsl": [174, 72, 56],
@@ -1265,7 +1265,7 @@
   },
   {
     "slug": "violet",
-    "hex": "HexColor(value='ee82ee')",
+    "hex": "#ee82ee",
     "rgb": [238, 130, 238],
     "rgba": [238, 130, 238, 1.0],
     "hsl": [300, 76, 72],
@@ -1273,7 +1273,7 @@
   },
   {
     "slug": "wheat",
-    "hex": "HexColor(value='f5deb3')",
+    "hex": "#f5deb3",
     "rgb": [245, 222, 179],
     "rgba": [245, 222, 179, 1.0],
     "hsl": [39, 77, 83],
@@ -1281,7 +1281,7 @@
   },
   {
     "slug": "white",
-    "hex": "HexColor(value='ffffff')",
+    "hex": "#ffffff",
     "rgb": [255, 255, 255],
     "rgba": [255, 255, 255, 1.0],
     "hsl": [0, 0, 100],
@@ -1289,7 +1289,7 @@
   },
   {
     "slug": "whitesmoke",
-    "hex": "HexColor(value='f5f5f5')",
+    "hex": "#f5f5f5",
     "rgb": [245, 245, 245],
     "rgba": [245, 245, 245, 1.0],
     "hsl": [0, 0, 96],
@@ -1297,7 +1297,7 @@
   },
   {
     "slug": "yellow",
-    "hex": "HexColor(value='ffff00')",
+    "hex": "#ffff00",
     "rgb": [255, 255, 0],
     "rgba": [255, 255, 0, 1.0],
     "hsl": [60, 100, 50],
@@ -1305,7 +1305,7 @@
   },
   {
     "slug": "yellowgreen",
-    "hex": "HexColor(value='9acd32')",
+    "hex": "#9acd32",
     "rgb": [154, 205, 50],
     "rgba": [154, 205, 50, 1.0],
     "hsl": [80, 61, 50],

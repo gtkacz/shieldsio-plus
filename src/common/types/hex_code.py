@@ -36,6 +36,9 @@ class HexColor:
 		if not is_valid_hex_code(self.value):
 			raise ValueError(f"Invalid hex code: {self.value}")
 
+	def __str__(self) -> str:
+		return self.hex
+
 	@property
 	def hex(self) -> str:
 		"""
