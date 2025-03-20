@@ -16,18 +16,18 @@ def main():
 	for svg in all_svgs:
 		slug, display_text, bg_color = svg.stem.split("_")
 
-		for style in ShieldsIOBadgeStyles:
+		for style in ShieldsIOBadgeStyles.members:
 			parsed_data.append(
 				ShieldsIOBadge(
 					slug=slug,
 					label=display_text,
 					color=HexColor(bg_color),
 					logo=read_svg(svg),
-					style=style
+					style=ShieldsIOBadgeStyles[style.name],
 				),
 			)
 
-	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/", f"{BASE_DIR}/data/badges.json")
+	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields/", f"{BASE_DIR}/data/badges.json")
 
 
 if __name__ == "__main__":

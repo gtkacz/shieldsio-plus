@@ -1,5 +1,6 @@
-from enum import Enum, EnumMeta, IntEnum, StrEnum
 from typing import List
+
+from aenum import Enum, EnumMeta, IntEnum, StrEnum
 
 
 class __MetaEnum(EnumMeta):
@@ -26,6 +27,16 @@ class __MetaEnum(EnumMeta):
 			List[str]: Values of the enum.
 		"""
 		return list(map(lambda x: x.value, cls._member_map_.values()))
+
+	@property
+	def members(cls) -> list:
+		"""
+		Returns the members of the enum.
+
+		Returns:
+			dict: Members of the enum.
+		"""
+		return list(cls.__members__.values())
 
 
 class BetterEnum(Enum, metaclass=__MetaEnum):

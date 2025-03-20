@@ -112,12 +112,19 @@ class ShieldsIOBadge:
 		return self.__BASE_URL + self.build_shieldsio_badge_str()
 
 	def download_shieldsio_badge(self, path: str) -> None:
+		self.path = Path(path + "/" + self.style.name.lower()).resolve()
+
+		if not self.path.exists():
+			self.path.mkdir(parents=True)
+
+		self.path /= f"{self.slug}.svg"
+
 		img_data = requests.get(self.build_shieldsio_url()).content.decode()
 
-		if self.style == ShieldsIOBadgeStyles.TRUE_FLAT:
+		if self.style.name in (ShieldsIOBadgeStyles.TRUE_FLAT.name, ShieldsIOBadgeStyles.TRUE_FLAT_SQUARE.name):
 			img_data = self.parse_real_flat(img_data)
 
-		with open(Path(path + self.style + "/shields", self.slug + ".svg"), "w") as handler:
+		with open(self.path, "w") as handler:
 			handler.write(img_data)
 
 	def to_dict(self) -> dict:
@@ -125,7 +132,7 @@ class ShieldsIOBadge:
 			"slug": self.slug,
 			"label": self.label,
 			"message": self.message,
-			"style": self.style.value,
+			"style": self.style.name.lower(),
 			"color": self.__color,
 			"label_color": self.__label_color,
 			"shields_io_url": self.build_shieldsio_url(),

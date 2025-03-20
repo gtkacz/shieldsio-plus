@@ -11,21 +11,24 @@ def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: st
 	Download shields.io badges in parallel using a ThreadPoolExecutor.
 
 	Args:
-	    shields: Sequence of ShieldsIOBadge objects
-	    badge_path: Directory path to save the badges
+		shields: Sequence of ShieldsIOBadge objects
+		badge_path: Directory path to save the badges
 	"""
 	badges = []
-	badge_path = Path(badge_path).resolve()
+	badge_path = str(Path(badge_path).resolve())
 
 	def _download_single_badge(badge: ShieldsIOBadge) -> None:
-		badges.append(badge.to_dict())
-
 		badge.download_shieldsio_badge(badge_path)
 
-		print(f"Downloaded: {badge.slug} to {badge_path}")
+		badges.append(badge.to_dict())
+
+		print(f"Downloaded: {badge.slug} to {badge.path}")
 
 	with concurrent.futures.ThreadPoolExecutor() as executor:
-		executor.map(_download_single_badge, shields)
+		futures = [executor.submit(_download_single_badge, badge) for badge in shields]
 
-	with open(Path(json_path).resolve(), "w") as f:
+		for future in concurrent.futures.as_completed(futures):
+			future.result()
+
+	with open(Path(json_path).resolve(), "w+") as f:
 		json_dump(badges, f, indent=4)
