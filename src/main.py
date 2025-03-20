@@ -2,7 +2,8 @@ import pathlib
 
 from src.common.types.esio_file import ESIOFile
 from src.common.types.hex_code import HexCode
-from src.util import svg_to_base64, download_shields_io_badges
+from src.util import svg_to_base64
+from src.util.download_shieldsio_badges import download_shields_io_badges
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 
