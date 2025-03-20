@@ -74,7 +74,7 @@ def script() -> None:
 		raise ValueError(f"Output path format does not match the output format: {args}.")
 
 	if args.output_format == "json":
-		output_method = partial(pd.DataFrame.to_json, orient="records")
+		output_method = partial(df_pprint_to_json, orient="records", indent=4)
 	elif args.output_format == "csv":
 		output_method = partial(pd.DataFrame.to_csv, index=False)
 	else:
@@ -85,12 +85,14 @@ def script() -> None:
 	all_colors = pd.concat([basic_colors, extended_colors])[[args.slug_column_name, args.hex_column_name]].dropna()
 	all_colors.columns = ["slug", "hex"]
 
+	all_colors = all_colors[all_colors["slug"] != "transparent"]
+
 	all_colors["slug"] = all_colors["slug"].str.replace(" ", "-").str.lower()
-	all_colors["hex"].str.split(" ").str[0].apply(HexColor)
-	all_colors["rgb"] = all_colors["hex"].str.split(" ").str[0].apply(HexColor.to_rgb)
-	all_colors["rgba"] = all_colors["rgb"].apply(HexColor.to_rgba)
-	all_colors["hsl"] = all_colors["rgb"].apply(HexColor.to_hsl)
-	all_colors["hsla"] = all_colors["hsl"].apply(HexColor.to_hsla)
+	all_colors["hex"] = all_colors["hex"].str.split(" ").str[0].apply(HexColor)
+	all_colors["rgb"] = all_colors["hex"].apply(HexColor.to_rgb)
+	all_colors["rgba"] = all_colors["hex"].apply(HexColor.to_rgba)
+	all_colors["hsl"] = all_colors["hex"].apply(HexColor.to_hsl)
+	all_colors["hsla"] = all_colors["hex"].apply(HexColor.to_hsla)
 
 	output_method(all_colors, args.output_path)
 
