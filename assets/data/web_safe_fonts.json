@@ -1,0 +1,196 @@
+{
+    "sans-serif": [
+        {
+            "family-name": "Arial",
+            "style": "font-family: Arial,\"Helvetica Neue\",Helvetica,sans-serif; !important"
+        },
+        {
+            "family-name": "Arial Black",
+            "style": "font-family: \"Arial Black\",\"Arial Bold\",Gadget,sans-serif; !important"
+        },
+        {
+            "family-name": "Arial Narrow",
+            "style": "font-family: \"Arial Narrow\",Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Arial Rounded MT Bold",
+            "style": "font-family: \"Arial Rounded MT Bold\",\"Helvetica Rounded\",Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Avant Garde",
+            "style": "font-family: \"Avant Garde\",Avantgarde,\"Century Gothic\",CenturyGothic,AppleGothic,sans-serif; !important"
+        },
+        {
+            "family-name": "Calibri",
+            "style": "font-family: Calibri,Candara,Segoe,\"Segoe UI\",Optima,Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Candara",
+            "style": "font-family: Candara,Calibri,Segoe,\"Segoe UI\",Optima,Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Century Gothic",
+            "style": "font-family: \"Century Gothic\",CenturyGothic,AppleGothic,sans-serif; !important"
+        },
+        {
+            "family-name": "Franklin Gothic Medium",
+            "style": "font-family: \"Franklin Gothic Medium\",\"Franklin Gothic\",\"ITC Franklin Gothic\",Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Futura",
+            "style": "font-family: Futura,\"Trebuchet MS\",Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Geneva",
+            "style": "font-family: Geneva,Tahoma,Verdana,sans-serif; !important"
+        },
+        {
+            "family-name": "Gill Sans",
+            "style": "font-family: \"Gill Sans\",\"Gill Sans MT\",Calibri,sans-serif; !important"
+        },
+        {
+            "family-name": "Helvetica Neue",
+            "style": "font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Impact",
+            "style": "font-family: Impact,Haettenschweiler,\"Franklin Gothic Bold\",Charcoal,\"Helvetica Inserat\",\"Bitstream Vera Sans Bold\",\"Arial Black\",sans-serif; !important"
+        },
+        {
+            "family-name": "Lucida Grande",
+            "style": "font-family: \"Lucida Grande\",\"Lucida Sans Unicode\",\"Lucida Sans\",Geneva,Verdana,sans-serif; !important"
+        },
+        {
+            "family-name": "Optima",
+            "style": "font-family: Optima,Segoe,\"Segoe UI\",Candara,Calibri,Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Segoe UI",
+            "style": "font-family: \"Segoe UI\",Frutiger,\"Frutiger Linotype\",\"Dejavu Sans\",\"Helvetica Neue\",Arial,sans-serif; !important"
+        },
+        {
+            "family-name": "Tahoma",
+            "style": "font-family: Tahoma,Verdana,Segoe,sans-serif; !important"
+        },
+        {
+            "family-name": "Trebuchet MS",
+            "style": "font-family: \"Trebuchet MS\",\"Lucida Grande\",\"Lucida Sans Unicode\",\"Lucida Sans\",Tahoma,sans-serif; !important"
+        },
+        {
+            "family-name": "Verdana",
+            "style": "font-family: Verdana,Geneva,sans-serif; !important"
+        }
+    ],
+    "serif": [
+        {
+            "family-name": "Big Caslon",
+            "style": "font-family: \"Big Caslon\",\"Book Antiqua\",\"Palatino Linotype\",Georgia,serif; !important"
+        },
+        {
+            "family-name": "Bodoni MT",
+            "style": "font-family: \"Bodoni MT\",Didot,\"Didot LT STD\",\"Hoefler Text\",Garamond,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Book Antiqua",
+            "style": "font-family: \"Book Antiqua\",Palatino,\"Palatino Linotype\",\"Palatino LT STD\",Georgia,serif; !important"
+        },
+        {
+            "family-name": "Calisto MT",
+            "style": "font-family: \"Calisto MT\",\"Bookman Old Style\",Bookman,\"Goudy Old Style\",Garamond,\"Hoefler Text\",\"Bitstream Charter\",Georgia,serif; !important"
+        },
+        {
+            "family-name": "Cambria",
+            "style": "font-family: Cambria,Georgia,serif; !important"
+        },
+        {
+            "family-name": "Didot",
+            "style": "font-family: Didot,\"Didot LT STD\",\"Hoefler Text\",Garamond,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Garamond",
+            "style": "font-family: Garamond,Baskerville,\"Baskerville Old Face\",\"Hoefler Text\",\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Georgia",
+            "style": "font-family: Georgia,Times,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Goudy Old Style",
+            "style": "font-family: \"Goudy Old Style\",Garamond,\"Big Caslon\",\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Hoefler Text",
+            "style": "font-family: \"Hoefler Text\",\"Baskerville Old Face\",Garamond,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Lucida Bright",
+            "style": "font-family: \"Lucida Bright\",Georgia,serif; !important"
+        },
+        {
+            "family-name": "Palatino",
+            "style": "font-family: Palatino,\"Palatino Linotype\",\"Palatino LT STD\",\"Book Antiqua\",Georgia,serif; !important"
+        },
+        {
+            "family-name": "Perpetua",
+            "style": "font-family: Perpetua,Baskerville,\"Big Caslon\",\"Palatino Linotype\",Palatino,\"URW Palladio L\",\"Nimbus Roman No9 L\",serif; !important"
+        },
+        {
+            "family-name": "Rockwell",
+            "style": "font-family: Rockwell,\"Courier Bold\",Courier,Georgia,Times,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "Rockwell Extra Bold",
+            "style": "font-family: \"Rockwell Extra Bold\",\"Rockwell Bold\",monospace; !important"
+        },
+        {
+            "family-name": "Baskerville",
+            "style": "font-family: Baskerville,\"Baskerville Old Face\",\"Hoefler Text\",Garamond,\"Times New Roman\",serif; !important"
+        },
+        {
+            "family-name": "TimesNewRoman",
+            "style": "font-family: TimesNewRoman,\"Times New Roman\",Times,Baskerville,Georgia,serif; !important"
+        }
+    ],
+    "monospace": [
+        {
+            "family-name": "Consolas",
+            "style": "font-family: Consolas,monaco,monospace; !important"
+        },
+        {
+            "family-name": "Courier New",
+            "style": "font-family: \"Courier New\",Courier,\"Lucida Sans Typewriter\",\"Lucida Typewriter\",monospace; !important"
+        },
+        {
+            "family-name": "Lucida Console",
+            "style": "font-family: \"Lucida Console\",\"Lucida Sans Typewriter\",monaco,\"Bitstream Vera Sans Mono\",monospace; !important"
+        },
+        {
+            "family-name": "Lucida Sans Typewriter",
+            "style": "font-family: \"Lucida Sans Typewriter\",\"Lucida Console\",monaco,\"Bitstream Vera Sans Mono\",monospace; !important"
+        },
+        {
+            "family-name": "monaco",
+            "style": "font-family: monaco,Consolas,\"Lucida Console\",monospace; !important"
+        },
+        {
+            "family-name": "Andale Mono",
+            "style": "font-family: \"Andale Mono\",AndaleMono,monospace; !important"
+        }
+    ],
+    "fantasy": [
+        {
+            "family-name": "Copperplate",
+            "style": "font-family: Copperplate,\"Copperplate Gothic Light\",fantasy; !important"
+        },
+        {
+            "family-name": "Papyrus",
+            "style": "font-family: Papyrus,fantasy; !important"
+        }
+    ],
+    "cursive": [
+        {
+            "family-name": "Brush Script MT",
+            "style": "font-family: \"Brush Script MT\",cursive; !important"
+        }
+    ]
+}

@@ -6,7 +6,7 @@ from urllib.parse import urlencode
 
 import requests
 
-from src.common.enums import ShieldsIOBadgeStyles, ShieldsIONamedColors
+from src.common.enums import ShieldsIOBadgeStyle, ShieldsIONamedColor, WebSafeFont
 from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_color import ShieldsIOColor
 from src.common.types.svg import SVG
@@ -18,15 +18,16 @@ class ShieldsIOBadge:
 	label: str
 	logo: SVG
 	message: Optional[str] = None
-	style: ShieldsIOBadgeStyles = ShieldsIOBadgeStyles.TRUE_FLAT
-	color: ShieldsIOColor = ShieldsIONamedColors.BLUE
+	style: ShieldsIOBadgeStyle = ShieldsIOBadgeStyle.TRUE_FLAT
+	color: ShieldsIOColor = ShieldsIONamedColor.BLUE
 	label_color: Optional[ShieldsIOColor] = None
+	font: WebSafeFont = WebSafeFont.DEFAULT
 	__BASE_URL: Final[str] = "https://img.shields.io/badge/"
 	__color: Optional[str] = None
 	__label_color: Optional[str] = None
 
 	def __post_init__(self):
-		if self.style not in ShieldsIOBadgeStyles:
+		if self.style not in ShieldsIOBadgeStyle:
 			raise ValueError(f"Invalid style: {self.style}")
 
 		self.__color = self.__parse_shields_io_color_object(self.color)
@@ -35,7 +36,7 @@ class ShieldsIOBadge:
 	@staticmethod
 	def __parse_shields_io_color_object(color_obj: Optional[ShieldsIOColor]) -> str:
 		if color_obj:
-			if isinstance(color_obj, ShieldsIONamedColors):
+			if isinstance(color_obj, ShieldsIONamedColor):
 				return color_obj.slug.replace("#", "")
 
 			if isinstance(color_obj, HexColor):
@@ -75,7 +76,7 @@ class ShieldsIOBadge:
 
 		img_data = SVG(requests.get(self.build_shieldsio_url()).content.decode())
 
-		if self.style.name in (ShieldsIOBadgeStyles.TRUE_FLAT.name, ShieldsIOBadgeStyles.TRUE_FLAT_SQUARE.name):
+		if self.style.name in (ShieldsIOBadgeStyle.TRUE_FLAT.name, ShieldsIOBadgeStyle.TRUE_FLAT_SQUARE.name):
 			img_data.parse_real_flat()
 
 		with open(self.path, "w") as handler:

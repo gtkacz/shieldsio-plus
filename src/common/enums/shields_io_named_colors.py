@@ -2,7 +2,7 @@ from src.common.enums.better_enum import BetterEnum
 from src.common.types.hex_code import HexColor
 
 
-class ShieldsIONamedColors(BetterEnum):
+class ShieldsIONamedColor(BetterEnum):
 	BRIGHTGREEN = ("brightgreen", HexColor("#4c1"))
 	GREEN = ("green", HexColor("#97ca00"))
 	YELLOW = ("yellow", HexColor("#dfb317"))

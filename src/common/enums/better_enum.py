@@ -16,7 +16,7 @@ class __MetaEnum(EnumMeta):
 		Returns:
 			List[str]: Names of the enum.
 		"""
-		return cls._member_names_
+		return sorted(cls._member_names_)
 
 	@property
 	def values(cls) -> List[str]:

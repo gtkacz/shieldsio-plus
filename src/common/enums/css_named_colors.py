@@ -8,4 +8,4 @@ with open("assets/data/css_named_colors.json") as f:
 
 data = list({item["slug"].upper(): HexColor(item["hex"]) for item in data}.items())
 
-CSSNamedColors = BetterEnum("CSSNamedColors", data)
+CSSNamedColor = BetterEnum("CSSNamedColor", data)

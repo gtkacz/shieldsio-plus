@@ -2,14 +2,12 @@
 - Fix README (expose as an API, PR guidelines)
 - Fix all Ruff checks
 - Make project installable
-- Create CLI interface
 - Figure out circular imports
-- Add support to rgb, rgba, hsl, hsla and css named colors (see src\common\types\hex_code.py)
 - Create builder like shields.io
 - Support usable icons
 - Create script to automatically fetch usable icons from https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json
 - Turn CLI into Google's Fire
 - Allow more parameters from filenames or json
 - Use loguru?
-- Support more fonts: https://www.w3schools.com/cssref/css_websafe_fonts.php
+- Support more fonts: https://www.cssfontstack.com/ https://web.mit.edu/jmorzins/www/fonts.html
 - Make SVG reader ignore viewBox, width, height etc.

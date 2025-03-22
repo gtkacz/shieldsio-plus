@@ -1,6 +1,6 @@
 import pathlib
 
-from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyles
+from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
 from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_badge import ShieldsIOBadge
 from src.common.types.svg import SVG
@@ -16,14 +16,14 @@ def main():
 	for svg in all_svgs:
 		slug, display_text, bg_color = svg.stem.split("_")
 
-		for style in ShieldsIOBadgeStyles.members:
+		for style in ShieldsIOBadgeStyle.members:
 			parsed_data.append(
 				ShieldsIOBadge(
 					slug=slug,
 					label=display_text,
 					color=HexColor(bg_color),
 					logo=SVG.from_file(svg),
-					style=ShieldsIOBadgeStyles[style.name],
+					style=ShieldsIOBadgeStyle[style.name],
 				),
 			)
 

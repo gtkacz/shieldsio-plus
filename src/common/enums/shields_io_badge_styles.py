@@ -3,7 +3,7 @@ from aenum import NoAlias
 from src.common.enums.better_enum import BetterStrEnum
 
 
-class ShieldsIOBadgeStyles(BetterStrEnum):
+class ShieldsIOBadgeStyle(BetterStrEnum):
 	_settings_ = NoAlias
 
 	FLAT = "flat"

@@ -42,8 +42,8 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | ibm-white | ![ibm-white](./assets/shields/flat/ibm-white.svg) |
 | ieee | ![ieee](./assets/shields/flat/ieee.svg) |
 | ieee-white | ![ieee-white](./assets/shields/flat/ieee-white.svg) |
+| linkedin | ![linkedin](./assets/shields/flat/linkedin.svg) |
 | linkedin-blue | ![linkedin-blue](./assets/shields/flat/linkedin-blue.svg) |
-| linkedin-blue-logo | ![linkedin-blue-logo](./assets/shields/flat/linkedin-blue-logo.svg) |
 | linkedin-white | ![linkedin-white](./assets/shields/flat/linkedin-white.svg) |
 | linkedin-white-logo | ![linkedin-white-logo](./assets/shields/flat/linkedin-white-logo.svg) |
 | magento | ![magento](./assets/shields/flat/magento.svg) |
@@ -76,6 +76,8 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | visual-studio | ![visual-studio](./assets/shields/flat/visual-studio.svg) |
 | visual-studio-white | ![visual-studio-white](./assets/shields/flat/visual-studio-white.svg) |
 | vs-code | ![vs-code](./assets/shields/flat/vs-code.svg) |
+| vs-code-black | ![vs-code-black](./assets/shields/flat/vs-code-black.svg) |
+| vs-code-dark | ![vs-code-dark](./assets/shields/flat/vs-code-dark.svg) |
 | vs-code-white | ![vs-code-white](./assets/shields/flat/vs-code-white.svg) |
 | windows-10 | ![windows-10](./assets/shields/flat/windows-10.svg) |
 | windows-10-blue | ![windows-10-blue](./assets/shields/flat/windows-10-blue.svg) |
@@ -94,7 +96,7 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | true_flat_square* | ![windows-10-blue](./assets/shields/true_flat_square/windows-10-blue.svg) |
 | plastic | ![windows-10-blue](./assets/shields/plastic/windows-10-blue.svg) |
 | for_the_badge | ![windows-10-blue](./assets/shields/for_the_badge/windows-10-blue.svg) |
-| social | ![windows-10-blue](./assets/shields/social/windows-10-blue.svg) |
+| social | ![windows-10](./assets/shields/social/windows-10.svg) |
 
 ## Expanding
 
