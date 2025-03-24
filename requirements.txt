@@ -1,2 +1,6 @@
 requests
 aenum
+loguru
+scipy
+defusedxml
+beautifulsoup4

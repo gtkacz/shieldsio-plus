@@ -37,7 +37,7 @@ target-version = "py39"
 preview = true
 
 select = ["ALL"]
-ignore = ["E721", "D211", "D212", "W191", "D206", "D404", "D203", "CPY001", "EM102", "TRY003", "PLR0904", "D205", "TID252", "D100", "D200", "S603", "S404", "S602", "TRY301", "C417", "FA100", "EM101"]
+ignore = ["E721", "D211", "D212", "W191", "D206", "D404", "D203", "CPY001", "EM102", "TRY003", "PLR0904", "D205", "TID252", "D100", "D200", "S603", "S404", "S602", "TRY301", "C417", "FA100", "EM101", "PLR2004", "FURB113", "E741"]
 extend-select = ["DOC"]
 
 fixable = ["ALL"]
@@ -60,6 +60,8 @@ line-ending = "auto"
 [lint.per-file-ignores]
 "__init__.py" = ["F401"]
 "**/{tests,docs,tools}/*" = ["D102", "ANN201", "PT009", "DTZ001", "PT027", "D101", "D100", "CPY001", "C409", "C405", "C409", "BLE001", "S311", "S301", "S403", "D104"]
+"src/main.py" = ["D103"]
+"src/scripts/*" = ["D103"]
 
 [lint.flake8-quotes]
 inline-quotes = "double"

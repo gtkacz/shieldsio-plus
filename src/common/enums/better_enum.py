@@ -1,4 +1,4 @@
-from typing import List
+from typing import Any
 
 from aenum import Enum, EnumMeta, IntEnum, StrEnum
 
@@ -9,22 +9,22 @@ class __MetaEnum(EnumMeta):
 	"""
 
 	@property
-	def names(cls) -> List[str]:
+	def names(cls) -> list[str]:
 		"""
 		Returns the names of the enum.
 
 		Returns:
-			List[str]: Names of the enum.
+			list[str]: Names of the enum.
 		"""
 		return sorted(cls._member_names_)
 
 	@property
-	def values(cls) -> List[str]:
+	def values(cls) -> list[Any]:
 		"""
 		Returns the values of the enum.
 
 		Returns:
-			List[str]: Values of the enum.
+			list[str]: Values of the enum.
 		"""
 		return list(map(lambda x: x.value, cls._member_map_.values()))
 

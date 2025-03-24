@@ -1,7 +1,9 @@
-import re
 from dataclasses import dataclass
 
-from src.common.types.color_types import CSSNamedColor, HSLAColor, HSLColor, RGBAColor, RGBColor
+from scipy.spatial.distance import euclidean
+
+from src.common.enums.css_named_colors import CSSNamedColor
+from src.common.types.color_types import HSLAColor, HSLColor, RGBAColor, RGBColor
 from src.util import is_valid_hex_code
 
 
@@ -14,21 +16,21 @@ class HexColor:
 	color formats such as RGB, RGBA, HSL, and HSLA.
 
 	Attributes:
-	    value: The hexadecimal color code without the leading '#'.
+		value: The hexadecimal color code without the leading '#'.
 	"""
 
 	value: str
 
-	def __init__(self, value: str):
+	def __init__(self, value: str) -> None:
 		"""
 		Initialize a HexColor object.
 
 		Args:
-		    value: A string representing a hexadecimal color code.
-		          Can include a leading '#' which will be removed.
+			value: A string representing a hexadecimal color code.
+				Can include a leading '#' which will be removed.
 
 		Raises:
-		    ValueError: If the provided value is not a valid hexadecimal color code.
+			ValueError: If the provided value is not a valid hexadecimal color code.
 		"""
 		processed_value = value if not value.startswith("#") else value[1:]
 		object.__setattr__(self, "value", processed_value)
@@ -36,7 +38,7 @@ class HexColor:
 		if not is_valid_hex_code(self.value):
 			raise ValueError(f"Invalid hex code: {self.value}")
 
-	def __str__(self) -> str:
+	def __str__(self) -> str:  # noqa: D105
 		return self.hex
 
 	@property
@@ -45,50 +47,50 @@ class HexColor:
 		Get the hex color code with the leading '#'.
 
 		Returns:
-		    A string representing the hex color code with the leading '#'.
+			A string representing the hex color code with the leading '#'.
 		"""
 		return "#" + self.value
 
 	@property
-	def rgb(self) -> tuple[int, int, int]:
+	def rgb(self) -> RGBColor:
 		"""
 		Get the RGB representation of the color.
 
 		Returns:
-		    A tuple of three integers representing the red, green, and blue components.
+			A tuple of three integers representing the red, green, and blue components.
 		"""
 		return self.to_rgb()
 
 	@property
-	def rgba(self) -> tuple[int, int, int, float]:
+	def rgba(self) -> RGBAColor:
 		"""
 		Get the RGBA representation of the color.
 
 		Returns:
-		    A tuple of three integers and a float representing the red, green, blue,
-		    and alpha components.
+			A tuple of three integers and a float representing the red, green, blue,
+			and alpha components.
 		"""
 		return self.to_rgba()
 
 	@property
-	def hsl(self) -> tuple[int, int, int]:
+	def hsl(self) -> HSLColor:
 		"""
 		Get the HSL representation of the color.
 
 		Returns:
-		    A tuple of three integers representing the hue, saturation, and lightness
-		    components.
+			A tuple of three integers representing the hue, saturation, and lightness
+			components.
 		"""
 		return self.to_hsl()
 
 	@property
-	def hsla(self) -> tuple[int, int, int, float]:
+	def hsla(self) -> HSLAColor:
 		"""
 		Get the HSLA representation of the color.
 
 		Returns:
-		    A tuple of three integers and a float representing the hue, saturation,
-		    lightness, and alpha components.
+			A tuple of three integers and a float representing the hue, saturation,
+			lightness, and alpha components.
 		"""
 		return self.to_hsla()
 
@@ -98,21 +100,20 @@ class HexColor:
 		Get the CSS representation of the color.
 
 		Returns:
-		    A string representing the CSS color value.
+			A string representing the CSS color value.
 		"""
 		return self.to_css()
 
-	def to_rgb(self) -> tuple[int, int, int]:
+	def to_rgb(self) -> RGBColor:
 		"""
 		Convert the hex color code to RGB format.
 
 		Returns:
-		    A tuple of three integers representing the red, green, and blue components.
+			A tuple of three integers representing the red, green, and blue components.
 		"""
 		hex_value = self.value
 
-		# Handle shorthand hex (e.g., "fff" to "ffffff")
-		if len(hex_value) == 3:
+		if len(hex_value) == 3:  # Handle shorthand hex (e.g., "fff" to "ffffff")
 			hex_value = "".join(c + c for c in hex_value)
 
 		r = int(hex_value[0:2], 16)
@@ -127,14 +128,14 @@ class HexColor:
 		Create a HexColor object from RGB values.
 
 		Args:
-		    rgb: A tuple of three integers representing the red, green, and blue components.
-		         Each component should be in the range [0, 255].
+			rgb: A tuple of three integers representing the red, green, and blue components.
+				Each component should be in the range [0, 255].
 
 		Returns:
-		    A new HexColor object.
+			A new HexColor object.
 
 		Raises:
-		    ValueError: If any RGB component is outside the valid range.
+			ValueError: If any RGB component is outside the valid range.
 		"""
 		r, g, b = rgb
 
@@ -145,18 +146,17 @@ class HexColor:
 		hex_value = f"{r:02x}{g:02x}{b:02x}"
 		return cls(hex_value)
 
-	def to_rgba(self) -> tuple[int, int, int, float]:
+	def to_rgba(self) -> RGBAColor:
 		"""
 		Convert the hex color code to RGBA format.
 
 		Returns:
-		    A tuple of three integers and a float representing the red, green, blue,
-		    and alpha components. Alpha will be 1.0 if not specified in the hex code.
+			A tuple of three integers and a float representing the red, green, blue,
+			and alpha components. Alpha will be 1.0 if not specified in the hex code.
 		"""
 		hex_value = self.value
 
-		# Handle shorthand hex (e.g., "fff" to "ffffff")
-		if len(hex_value) == 3:
+		if len(hex_value) == 3:  # Handle shorthand hex (e.g., "fff" to "ffffff")
 			hex_value += hex_value
 
 		r = int(hex_value[0:2], 16)
@@ -164,10 +164,7 @@ class HexColor:
 		b = int(hex_value[4:6], 16)
 
 		# Check if alpha channel is present
-		if len(hex_value) == 8:
-			a = int(hex_value[6:8], 16) / 255
-		else:
-			a = 1.0
+		a = int(hex_value[6:8], 16) / 255 if len(hex_value) == 8 else 1.0
 
 		return (r, g, b, a)
 
@@ -177,15 +174,15 @@ class HexColor:
 		Create a HexColor object from RGBA values.
 
 		Args:
-		    rgba: A tuple of three integers and a float representing the red, green, blue,
-		          and alpha components. RGB values should be in the range [0, 255],
-		          and alpha should be in the range [0, 1].
+			rgba: A tuple of three integers and a float representing the red, green, blue,
+				and alpha components. RGB values should be in the range [0, 255],
+				and alpha should be in the range [0, 1].
 
 		Returns:
-		    A new HexColor object.
+			A new HexColor object.
 
 		Raises:
-		    ValueError: If any component is outside the valid range.
+			ValueError: If any component is outside the valid range.
 		"""
 		r, g, b, a = rgba
 
@@ -202,13 +199,13 @@ class HexColor:
 		hex_value = f"{r:02x}{g:02x}{b:02x}{alpha_hex}"
 		return cls(hex_value)
 
-	def to_hsl(self) -> tuple[int, int, int]:
+	def to_hsl(self) -> HSLColor:
 		"""
 		Convert the hex color code to HSL format.
 
 		Returns:
-		    A tuple of three integers representing the hue (0-360), saturation (0-100),
-		    and lightness (0-100) components.
+			A tuple of three integers representing the hue (0-360), saturation (0-100),
+			and lightness (0-100) components.
 		"""
 		r, g, b = self.to_rgb()
 
@@ -255,14 +252,14 @@ class HexColor:
 		Create a HexColor object from HSL values.
 
 		Args:
-		    hsl: A tuple of three integers representing the hue (0-360),
-		         saturation (0-100), and lightness (0-100) components.
+			hsl: A tuple of three integers representing the hue (0-360),
+				saturation (0-100), and lightness (0-100) components.
 
 		Returns:
-		    A new HexColor object.
+			A new HexColor object.
 
 		Raises:
-		    ValueError: If any HSL component is outside the valid range.
+			ValueError: If any HSL component is outside the valid range.
 		"""
 		h, s, l = hsl
 
@@ -303,13 +300,13 @@ class HexColor:
 
 		return cls.from_rgb((r, g, b))
 
-	def to_hsla(self) -> tuple[int, int, int, float]:
+	def to_hsla(self) -> HSLAColor:
 		"""
 		Convert the hex color code to HSLA format.
 
 		Returns:
-		    A tuple of three integers and a float representing the hue (0-360),
-		    saturation (0-100), lightness (0-100), and alpha (0-1) components.
+			A tuple of three integers and a float representing the hue (0-360),
+			saturation (0-100), lightness (0-100), and alpha (0-1) components.
 		"""
 		h, s, l = self.to_hsl()
 		_, _, _, a = self.to_rgba()
@@ -322,14 +319,14 @@ class HexColor:
 		Create a HexColor object from HSLA values.
 
 		Args:
-		    hsla: A tuple of three integers and a float representing the hue (0-360),
-		          saturation (0-100), lightness (0-100), and alpha (0-1) components.
+			hsla: A tuple of three integers and a float representing the hue (0-360),
+				saturation (0-100), lightness (0-100), and alpha (0-1) components.
 
 		Returns:
-		    A new HexColor object.
+			A new HexColor object.
 
 		Raises:
-		    ValueError: If any component is outside the valid range.
+			ValueError: If any component is outside the valid range.
 		"""
 		h, s, l, a = hsla
 
@@ -345,73 +342,26 @@ class HexColor:
 
 		return cls.from_rgba((r, g, b, a))
 
-	def to_css(self) -> str:
+	def to_css(self) -> "CSSNamedColor":
 		"""
-		Convert the hex color code to a CSS color string.
+		Convert the hex color code to the closest CSS named color.
 
 		Returns:
-		    A string representing the color in CSS format.
-		    Uses hex format (#RRGGBB) unless the color has an alpha channel,
-		    in which case it uses rgba() format.
+			A CSSNamedColor object representing
+			the closest named color to the hex code.
 		"""
-		# Check if the color has an alpha channel
-		if len(self.value) == 8:
-			r, g, b, a = self.to_rgba()
-			return f"rgba({r}, {g}, {b}, {a})"
-		return self.hex
+		css_rgb_codes = {self.__class__(color.hex).to_rgb(): color for color in CSSNamedColor}
+		return css_rgb_codes[min(css_rgb_codes, key=lambda c: euclidean(c, self.to_rgb()))]
 
 	@classmethod
-	def from_css(cls, css: CSSNamedColor) -> "HexColor":
+	def from_css(cls, css: "CSSNamedColor") -> "HexColor":
 		"""
-		Create a HexColor object from a CSS color string.
+		Create a HexColor object from a CSS named color.
 
 		Args:
-		    css: A string representing a CSS color. Supported formats:
-		         - Hex: "#RRGGBB" or "#RGB"
-		         - RGB: "rgb(R, G, B)" or "rgb(R G B)"
-		         - RGBA: "rgba(R, G, B, A)" or "rgba(R G B / A)"
-		         - HSL: "hsl(H, S%, L%)" or "hsl(H S% L%)"
-		         - HSLA: "hsla(H, S%, L%, A)" or "hsla(H S% L% / A)"
+			css: A CSSNamedColor object representing a named color.
 
 		Returns:
-		    A new HexColor object.
-
-		Raises:
-		    ValueError: If the CSS string is in an unsupported format.
+			A new HexColor object.
 		"""
-		css = css.strip().lower()
-
-		# Check if it's a hex color
-		if css.startswith("#"):
-			return cls(css)
-
-		# Check for rgb/rgba format
-		rgb_pattern = r"rgba?\(\s*(\d+)(?:\s*,\s*|\s+)(\d+)(?:\s*,\s*|\s+)(\d+)(?:\s*,\s*|\s*\/\s*)?([0-9\.]+)?\s*\)"
-		rgb_match = re.match(rgb_pattern, css)
-
-		if rgb_match:
-			r = int(rgb_match.group(1))
-			g = int(rgb_match.group(2))
-			b = int(rgb_match.group(3))
-
-			if rgb_match.group(4):  # If alpha is present
-				a = float(rgb_match.group(4))
-				return cls.from_rgba((r, g, b, a))
-			return cls.from_rgb((r, g, b))
-
-		# Check for hsl/hsla format
-		hsl_pattern = r"hsla?\(\s*(\d+)(?:\s*,\s*|\s+)(\d+)%(?:\s*,\s*|\s+)(\d+)%(?:\s*,\s*|\s*\/\s*)?([0-9\.]+)?\s*\)"
-		hsl_match = re.match(hsl_pattern, css)
-
-		if hsl_match:
-			h = int(hsl_match.group(1))
-			s = int(hsl_match.group(2))
-			l = int(hsl_match.group(3))
-
-			if hsl_match.group(4):  # If alpha is present
-				a = float(hsl_match.group(4))
-				return cls.from_hsla((h, s, l, a))
-			return cls.from_hsl((h, s, l))
-
-		# If we get here, the format is not supported
-		raise ValueError(f"Unsupported CSS color format: {css}")
+		return cls(css.hex)

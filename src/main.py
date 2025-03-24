@@ -9,23 +9,23 @@ from src.util.download_shieldsio_badges import download_shields_io_badges
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 
 
-def main():
+def main() -> None:
 	parsed_data = []
 	all_svgs = list(pathlib.Path(f"{BASE_DIR}/assets/icons").glob("*.svg"))
 
 	for svg in all_svgs:
 		slug, display_text, bg_color = svg.stem.split("_")
 
-		for style in ShieldsIOBadgeStyle.members:
-			parsed_data.append(
-				ShieldsIOBadge(
-					slug=slug,
-					label=display_text,
-					color=HexColor(bg_color),
-					logo=SVG.from_file(svg),
-					style=ShieldsIOBadgeStyle[style.name],
-				),
+		parsed_data.extend([
+			ShieldsIOBadge(
+				slug=slug,
+				label=display_text,
+				color=HexColor(bg_color),
+				logo=SVG.from_file(svg),
+				style=ShieldsIOBadgeStyle[style.name],
 			)
+			for style in ShieldsIOBadgeStyle.members
+		])
 
 	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields/", f"{BASE_DIR}/assets/data/badges.json")
 
