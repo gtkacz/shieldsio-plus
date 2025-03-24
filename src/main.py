@@ -1,6 +1,7 @@
 import pathlib
 
 from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
+from src.common.enums.web_safe_fonts import WebSafeFont
 from src.common.types.hex_code import HexColor
 from src.common.types.shields_io_badge import ShieldsIOBadge
 from src.common.types.svg import SVG
@@ -25,6 +26,20 @@ def main() -> None:
 				style=ShieldsIOBadgeStyle[style.name],
 			)
 			for style in ShieldsIOBadgeStyle.members
+		])
+
+	for font in WebSafeFont:
+		svg = next(svg for svg in all_svgs if "windows-10-blue" in svg.stem)
+		slug, display_text, bg_color = svg.stem.split("_")
+
+		parsed_data.extend([
+			ShieldsIOBadge(
+				slug=slug,
+				label=display_text,
+				color=HexColor(bg_color),
+				logo=SVG.from_file(svg),
+				font=font,
+			),
 		])
 
 	download_shields_io_badges(parsed_data, f"{BASE_DIR}/assets/shields/", f"{BASE_DIR}/assets/data/badges.json")

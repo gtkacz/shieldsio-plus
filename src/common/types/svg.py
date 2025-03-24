@@ -217,8 +217,8 @@ class SVG:
 		except Exception as e:
 			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
-		for text in soup.find_all(lambda tag: SVG.local_name(tag.name) == "text"):
-			text["font-family"] = font.style
+		for text in soup.find_all(lambda tag: SVG.local_name(tag.name) in {"text", "g"}):
+			text["font-family"] = font.style.removeprefix("font-family: ").removesuffix("; !important").replace('"', "")
 
 		self.svg_str = str(soup)
 		self.svg_to_base64()  # Update base64 after modifying SVG

@@ -4,8 +4,6 @@ from json import dump as json_dump
 from operator import itemgetter
 from pathlib import Path
 
-from loguru import logger
-
 from src.common.types.shields_io_badge import ShieldsIOBadge
 
 
@@ -25,8 +23,6 @@ def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: st
 		badge.download_shieldsio_badge(badge_path)
 
 		badges.append(badge.to_dict())
-
-		logger.info(f"Downloaded: {badge.slug} to {badge.path}")
 
 	with concurrent.futures.ThreadPoolExecutor() as executor:
 		futures = [executor.submit(_download_single_badge, badge) for badge in shields]

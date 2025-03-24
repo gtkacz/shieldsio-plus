@@ -29,7 +29,7 @@ jobs:
     - name: Run script to update repository data
       run: |
         uv run ipython src/main.py
-        uv run ipython src/scripts/update_readme_table.py
+        uv run ipython src/scripts/update_readme.py
 
     - name: Commit and push changes
       run: |

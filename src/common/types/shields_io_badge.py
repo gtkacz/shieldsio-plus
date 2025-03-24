@@ -4,6 +4,8 @@ from pathlib import Path
 from typing import Any, Final, Optional
 from urllib.parse import urlencode
 
+from loguru import logger
+
 from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
 from src.common.enums.shields_io_named_colors import ShieldsIONamedColor
 from src.common.enums.web_safe_fonts import WebSafeFont
@@ -148,7 +150,12 @@ class ShieldsIOBadge:
 			path: The directory path where the badge will be saved.
 		"""
 		# Create the full path including style subdirectory
-		self.path = Path(path + "/" + self.style.name.lower()).resolve()
+		self.path = Path(
+			path
+			+ "/"
+			+ self.style.name.lower()
+			+ (f"/{self.font.name.lower()}" if self.font != WebSafeFont.DEFAULT else ""),
+		).resolve()
 
 		# Create directories if they don't exist
 		if not self.path.exists():
@@ -175,6 +182,8 @@ class ShieldsIOBadge:
 		# Write the SVG to file
 		img_data.save_to_file(self.path)
 
+		logger.info(f"Downloaded: {self.slug} to {self.path}")
+
 	def to_dict(self) -> dict[str, Any]:
 		"""
 		Converts the badge object to a dictionary representation.
@@ -190,5 +199,6 @@ class ShieldsIOBadge:
 			"color": self.__color,
 			"label_color": self.__label_color,
 			"logo_color": self.__logo_color,
+			"font": self.font.name.lower(),
 			"shields_io_url": self.build_shieldsio_url(),
 		}
