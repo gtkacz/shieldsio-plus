@@ -1,13 +1,13 @@
 import pathlib
 
-from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
-from src.common.enums.web_safe_fonts import WebSafeFont
-from src.common.types.hex_code import HexColor
-from src.common.types.shields_io_badge import ShieldsIOBadge
-from src.common.types.svg import SVG
-from src.util.download_shieldsio_badges import download_shields_io_badges
+from shieldsio_plus.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
+from shieldsio_plus.common.enums.web_safe_fonts import WebSafeFont
+from shieldsio_plus.common.types.hex_code import HexColor
+from shieldsio_plus.common.types.shields_io_badge import ShieldsIOBadge
+from shieldsio_plus.common.types.svg import SVG
+from shieldsio_plus.util.download_shieldsio_badges import download_shields_io_badges
 
-BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
+BASE_DIR = pathlib.Path(__file__).resolve().parent.parent.parent
 
 
 def main() -> None:

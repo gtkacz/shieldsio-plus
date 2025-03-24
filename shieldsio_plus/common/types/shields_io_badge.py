@@ -6,12 +6,12 @@ from urllib.parse import urlencode
 
 from loguru import logger
 
-from src.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
-from src.common.enums.shields_io_named_colors import ShieldsIONamedColor
-from src.common.enums.web_safe_fonts import WebSafeFont
-from src.common.types.hex_code import HexColor
-from src.common.types.shields_io_color import ShieldsIOColor
-from src.common.types.svg import SVG
+from shieldsio_plus.common.enums.shields_io_badge_styles import ShieldsIOBadgeStyle
+from shieldsio_plus.common.enums.shields_io_named_colors import ShieldsIONamedColor
+from shieldsio_plus.common.enums.web_safe_fonts import WebSafeFont
+from shieldsio_plus.common.types.hex_code import HexColor
+from shieldsio_plus.common.types.shields_io_color import ShieldsIOColor
+from shieldsio_plus.common.types.svg import SVG
 
 
 @dataclass

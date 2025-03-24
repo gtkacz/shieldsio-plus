@@ -58,10 +58,11 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 
 [lint.per-file-ignores]
-"__init__.py" = ["F401"]
+"**/__init__.py" = ["F401"]
+"manage.py" = ["PLC0415", "DOC501", "ANN201"]
 "**/{tests,docs,tools}/*" = ["D102", "ANN201", "PT009", "DTZ001", "PT027", "D101", "D100", "CPY001", "C409", "C405", "C409", "BLE001", "S311", "S301", "S403", "D104"]
-"src/main.py" = ["D103"]
-"src/scripts/*" = ["D103"]
+"shieldsio_plus/scripts/*" = ["D103"]
+"shieldsio_plus/common/enums/better_enum.py" = ["N805"]
 
 [lint.flake8-quotes]
 inline-quotes = "double"

@@ -1,5 +1,5 @@
-from src.common.enums.better_enum import BetterEnum
-from src.common.types.hex_code import HexColor
+from shieldsio_plus.common.enums.better_enum import BetterEnum
+from shieldsio_plus.common.types.hex_code import HexColor
 
 
 class ShieldsIONamedColor(BetterEnum):

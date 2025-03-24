@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import TypedDict
 
-from src.common.enums.better_enum import BetterEnum
+from shieldsio_plus.common.enums.better_enum import BetterEnum
 
 
 class _WebSafeFontData(TypedDict):

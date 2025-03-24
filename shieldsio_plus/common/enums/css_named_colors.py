@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.common.enums.better_enum import BetterEnum
+from shieldsio_plus.common.enums.better_enum import BetterEnum
 
 
 class _CSSNamedColor(BetterEnum):

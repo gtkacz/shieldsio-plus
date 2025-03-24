@@ -2,5 +2,8 @@ requests
 aenum
 loguru
 scipy
-defusedxml
 beautifulsoup4
+django_extensions
+djangorestframework
+drf_spectacular
+python-dotenv

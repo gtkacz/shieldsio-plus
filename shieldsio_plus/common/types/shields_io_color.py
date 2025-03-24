@@ -1,7 +1,7 @@
 from typing import Union
 
-from src.common.enums.shields_io_named_colors import ShieldsIONamedColor
-from src.common.types.hex_code import HexColor
+from shieldsio_plus.common.enums.shields_io_named_colors import ShieldsIONamedColor
+from shieldsio_plus.common.types.hex_code import HexColor
 
 # Type alias for colors supported by Shields.io
 ShieldsIOColor = Union[ShieldsIONamedColor, HexColor]

@@ -4,7 +4,7 @@ from json import dump as json_dump
 from operator import itemgetter
 from pathlib import Path
 
-from src.common.types.shields_io_badge import ShieldsIOBadge
+from shieldsio_plus.common.types.shields_io_badge import ShieldsIOBadge
 
 
 def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: str, json_path: str) -> None:

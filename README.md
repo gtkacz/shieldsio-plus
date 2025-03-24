@@ -1,4 +1,4 @@
-# Extra Shields.io Badges
+# Shields.io+
 
 A Python utility for generating customized [Shields.io](https://shields.io/) badges as well as a static API for additional icons not included in [Simple Icons](https://simpleicons.org/).
 
@@ -16,7 +16,7 @@ This utility simplifies the creation and customization of badges in the style of
 ### Basic Usage
 
 #### Static API
-To use this repository as a static API, all you need to do is pass the `slug` you want to the URL: `https://raw.githubusercontent.com/gtkacz/extra-shieldsio-badges/refs/heads/main/assets/shields/{style}/{slug}.svg`. To add more icons to the static API, see [below](#filename-convention).
+To use this repository as a static API, all you need to do is pass the `slug` you want to the URL: `https://raw.githubusercontent.com/gtkacz/shieldsio-plus/refs/heads/main/assets/shields/{style}/{slug}.svg`. To add more icons to the static API, see [below](#filename-convention).
 
 #### Available Slugs
 

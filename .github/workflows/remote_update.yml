@@ -28,8 +28,8 @@ jobs:
 
     - name: Run script to update README table
       run: |
-        uv run ipython src/scripts/update_css_named_colors.py
-        uv run ipython src/scripts/update_shieldsio_named_colors.py
+        uv run ipython shieldsio_plus/scripts/update_css_named_colors.py
+        uv run ipython shieldsio_plus/scripts/update_shieldsio_named_colors.py
 
     - name: Commit and push changes
       run: |

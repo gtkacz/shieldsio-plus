@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.common.types.hex_code import HexColor
+from shieldsio_plus.common.types.hex_code import HexColor
 
 
 def script() -> None:

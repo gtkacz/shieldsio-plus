@@ -4,7 +4,7 @@ from pathlib import Path
 
 from loguru import logger
 
-from src.common.enums.web_safe_fonts import WebSafeFont
+from shieldsio_plus.common.enums.web_safe_fonts import WebSafeFont
 
 
 def update_available_logos(markdown_filename: str, badges_json_filename: str) -> None:

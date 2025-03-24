@@ -6,7 +6,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-from src.common.enums.web_safe_fonts import WebSafeFont
+from shieldsio_plus.common.enums.web_safe_fonts import WebSafeFont
 
 
 @dataclass

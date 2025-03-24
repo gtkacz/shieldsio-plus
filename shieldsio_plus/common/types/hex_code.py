@@ -2,9 +2,9 @@ from dataclasses import dataclass
 
 from scipy.spatial.distance import euclidean
 
-from src.common.enums.css_named_colors import CSSNamedColor
-from src.common.types.color_types import HSLAColor, HSLColor, RGBAColor, RGBColor
-from src.util import is_valid_hex_code
+from shieldsio_plus.common.enums.css_named_colors import CSSNamedColor
+from shieldsio_plus.common.types.color_types import HSLAColor, HSLColor, RGBAColor, RGBColor
+from shieldsio_plus.util import is_valid_hex_code
 
 
 @dataclass(frozen=True)

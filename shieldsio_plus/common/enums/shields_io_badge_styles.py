@@ -2,7 +2,7 @@ from typing import ClassVar
 
 from aenum import NoAlias
 
-from src.common.enums.better_enum import BetterStrEnum
+from shieldsio_plus.common.enums.better_enum import BetterStrEnum
 
 
 class ShieldsIOBadgeStyle(BetterStrEnum):
