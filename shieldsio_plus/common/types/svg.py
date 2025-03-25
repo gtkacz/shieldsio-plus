@@ -152,9 +152,8 @@ class SVG:
 			ValueError: If the SVG content cannot be parsed.
 		"""
 		try:
-			soup = BeautifulSoup(self.svg_str, "lxml")
+			soup = BeautifulSoup(self.svg_str, "lxml-xml")
 		except Exception as e:
-			breakpoint()
 			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
 		self.apply_rounded_corners(soup)
@@ -173,7 +172,7 @@ class SVG:
 			ValueError: If the SVG content cannot be parsed.
 		"""
 		try:
-			soup = BeautifulSoup(self.svg_str, "xml")
+			soup = BeautifulSoup(self.svg_str, "lxml-xml")
 		except Exception as e:
 			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
@@ -194,7 +193,7 @@ class SVG:
 			ValueError: If the SVG content cannot be parsed.
 		"""
 		try:
-			soup = BeautifulSoup(self.svg_str, "xml")
+			soup = BeautifulSoup(self.svg_str, "lxml-xml")
 		except Exception as e:
 			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
