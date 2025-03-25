@@ -1,695 +1,887 @@
-[
-  {
-    "logo": "assets/icons/azure-white_Azure_FFF.svg",
-    "slug": "azure-white",
-    "label": "Azure",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/azure_Azure_2892df.svg",
-    "slug": "azure",
-    "label": "Azure",
-    "message": null,
-    "style": null,
-    "color": "2892df",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/confluent-white_Confluent_FFF.svg",
-    "slug": "confluent-white",
-    "label": "Confluent",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/confluent_Confluent_040531.svg",
-    "slug": "confluent",
-    "label": "Confluent",
-    "message": null,
-    "style": null,
-    "color": "040531",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/dot-net-core-white_.NET Core_FFF.svg",
-    "slug": "dot-net-core-white",
-    "label": ".NET Core",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/dot-net-core_.NET Core_5c2d91.svg",
-    "slug": "dot-net-core",
-    "label": ".NET Core",
-    "message": null,
-    "style": null,
-    "color": "5c2d91",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/gitcode-black_GitCode_000.svg",
-    "slug": "gitcode-black",
-    "label": "GitCode",
-    "message": null,
-    "style": null,
-    "color": "000",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/gitcode-white_GitCode_FFF.svg",
-    "slug": "gitcode-white",
-    "label": "GitCode",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/gitcode_GitCode_0d1117.svg",
-    "slug": "gitcode",
-    "label": "GitCode",
-    "message": null,
-    "style": null,
-    "color": "0d1117",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/gogs-white_Gogs_FFF.svg",
-    "slug": "gogs-white",
-    "label": "Gogs",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/gogs_Gogs_e16146.svg",
-    "slug": "gogs",
-    "label": "Gogs",
-    "message": null,
-    "style": null,
-    "color": "e16146",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/hacktoberfest-black_Hacktoberfest_f3f0e0.svg",
-    "slug": "hacktoberfest-black",
-    "label": "Hacktoberfest",
-    "message": null,
-    "style": null,
-    "color": "f3f0e0",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/hacktoberfest-white_Hacktoberfest_183717.svg",
-    "slug": "hacktoberfest-white",
-    "label": "Hacktoberfest",
-    "message": null,
-    "style": null,
-    "color": "183717",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/hacktoberfest_Hacktoberfest_183717.svg",
-    "slug": "hacktoberfest",
-    "label": "Hacktoberfest",
-    "message": null,
-    "style": null,
-    "color": "183717",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ibm-cloud-white_IBM Cloud_FFF.svg",
-    "slug": "ibm-cloud-white",
-    "label": "IBM Cloud",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ibm-cloud_IBM Cloud_1F70C1.svg",
-    "slug": "ibm-cloud",
-    "label": "IBM Cloud",
-    "message": null,
-    "style": null,
-    "color": "1F70C1",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ibm-white_IBM_FFF.svg",
-    "slug": "ibm-white",
-    "label": "IBM",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ibm_IBM_1F70C1.svg",
-    "slug": "ibm",
-    "label": "IBM",
-    "message": null,
-    "style": null,
-    "color": "1F70C1",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ieee-white_IEEE_FFF.svg",
-    "slug": "ieee-white",
-    "label": "IEEE",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/ieee_IEEE_0a70a3.svg",
-    "slug": "ieee",
-    "label": "IEEE",
-    "message": null,
-    "style": null,
-    "color": "0a70a3",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/linkedin-blue_LinkedIn_007EBB.svg",
-    "slug": "linkedin-blue",
-    "label": "LinkedIn",
-    "message": null,
-    "style": null,
-    "color": "007EBB",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/linkedin-white-logo_LinkedIn_FFF.svg",
-    "slug": "linkedin-white-logo",
-    "label": "LinkedIn",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/linkedin-white_LinkedIn_FFF.svg",
-    "slug": "linkedin-white",
-    "label": "LinkedIn",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/linkedin_LinkedIn_007EBB.svg",
-    "slug": "linkedin",
-    "label": "LinkedIn",
-    "message": null,
-    "style": null,
-    "color": "007EBB",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/magento-grey_Magento_4d4d4d.svg",
-    "slug": "magento-grey",
-    "label": "Magento",
-    "message": null,
-    "style": null,
-    "color": "4d4d4d",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/magento-white_Magento_FFF.svg",
-    "slug": "magento-white",
-    "label": "Magento",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/magento_Magento_f26322.svg",
-    "slug": "magento",
-    "label": "Magento",
-    "message": null,
-    "style": null,
-    "color": "f26322",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/microsoft-white_Microsoft_FFF.svg",
-    "slug": "microsoft-white",
-    "label": "Microsoft",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/microsoft_Microsoft_005BA4.svg",
-    "slug": "microsoft",
-    "label": "Microsoft",
-    "message": null,
-    "style": null,
-    "color": "005BA4",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/oracle-cloud-white_Oracle Cloud_FFF.svg",
-    "slug": "oracle-cloud-white",
-    "label": "Oracle Cloud",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/oracle-cloud_Oracle Cloud_C74634.svg",
-    "slug": "oracle-cloud",
-    "label": "Oracle Cloud",
-    "message": null,
-    "style": null,
-    "color": "C74634",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/oracle-white_Oracle_FFF.svg",
-    "slug": "oracle-white",
-    "label": "Oracle",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/oracle_Oracle_C74634.svg",
-    "slug": "oracle",
-    "label": "Oracle",
-    "message": null,
-    "style": null,
-    "color": "C74634",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/orcid-grey-logo_ORCID_A6A8AB.svg",
-    "slug": "orcid-grey-logo",
-    "label": "ORCID",
-    "message": null,
-    "style": null,
-    "color": "A6A8AB",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/orcid-logo_ORCID_A6CE39.svg",
-    "slug": "orcid-logo",
-    "label": "ORCID",
-    "message": null,
-    "style": null,
-    "color": "A6CE39",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/orcid-white-logo_ORCID_FFF.svg",
-    "slug": "orcid-white-logo",
-    "label": "ORCID",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/orcid-white_ORCID_FFF.svg",
-    "slug": "orcid-white",
-    "label": "ORCID",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/orcid_ORCID_A6CE39.svg",
-    "slug": "orcid",
-    "label": "ORCID",
-    "message": null,
-    "style": null,
-    "color": "A6CE39",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/phacility_Phacility_FFF.svg",
-    "slug": "phacility",
-    "label": "Phacility",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/play-framework_Play Framework_FFF.svg",
-    "slug": "play-framework",
-    "label": "Play Framework",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/plnkr-white_Plnkr_FFF.svg",
-    "slug": "plnkr-white",
-    "label": "Plnkr",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/plnkr_Plnkr_333.svg",
-    "slug": "plnkr",
-    "label": "Plnkr",
-    "message": null,
-    "style": null,
-    "color": "333",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sbc-blue_SBC_1479be.svg",
-    "slug": "sbc-blue",
-    "label": "SBC",
-    "message": null,
-    "style": null,
-    "color": "1479be",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sbc_SBC_d2692d.svg",
-    "slug": "sbc",
-    "label": "SBC",
-    "message": null,
-    "style": null,
-    "color": "d2692d",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sourcegraph-black_Sourcegraph_14171f.svg",
-    "slug": "sourcegraph-black",
-    "label": "Sourcegraph",
-    "message": null,
-    "style": null,
-    "color": "14171f",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sourcegraph-white_Sourcegraph_F34E3F.svg",
-    "slug": "sourcegraph-white",
-    "label": "Sourcegraph",
-    "message": null,
-    "style": null,
-    "color": "F34E3F",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sourcegraph_Sourcegraph_F34E3F.svg",
-    "slug": "sourcegraph",
-    "label": "Sourcegraph",
-    "message": null,
-    "style": null,
-    "color": "F34E3F",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sql-developer-white_SQL Developer_FFF.svg",
-    "slug": "sql-developer-white",
-    "label": "SQL Developer",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/sql-developer_SQL Developer_C74634.svg",
-    "slug": "sql-developer",
-    "label": "SQL Developer",
-    "message": null,
-    "style": null,
-    "color": "C74634",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/twitter-white_Twitter_FFF.svg",
-    "slug": "twitter-white",
-    "label": "Twitter",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/twitter_Twitter_1d9bf0.svg",
-    "slug": "twitter",
-    "label": "Twitter",
-    "message": null,
-    "style": null,
-    "color": "1d9bf0",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/visual-studio-white_Visual Studio_FFF.svg",
-    "slug": "visual-studio-white",
-    "label": "Visual Studio",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/visual-studio_Visual Studio_662E93.svg",
-    "slug": "visual-studio",
-    "label": "Visual Studio",
-    "message": null,
-    "style": null,
-    "color": "662E93",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/vs-code-black_Visual Studio Code_000.svg",
-    "slug": "vs-code-black",
-    "label": "Visual Studio Code",
-    "message": null,
-    "style": null,
-    "color": "000",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/vs-code-dark_Visual Studio Code_003054.svg",
-    "slug": "vs-code-dark",
-    "label": "Visual Studio Code",
-    "message": null,
-    "style": null,
-    "color": "003054",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/vs-code-white_Visual Studio Code_FFF.svg",
-    "slug": "vs-code-white",
-    "label": "Visual Studio Code",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/vs-code_Visual Studio Code_0060a9.svg",
-    "slug": "vs-code",
-    "label": "Visual Studio Code",
-    "message": null,
-    "style": null,
-    "color": "0060a9",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/windows-10-blue_Windows_00adef.svg",
-    "slug": "windows-10-blue",
-    "label": "Windows",
-    "message": null,
-    "style": null,
-    "color": "00adef",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/windows-10_Windows_FFF.svg",
-    "slug": "windows-10",
-    "label": "Windows",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/windows-7-white_Windows_FFF.svg",
-    "slug": "windows-7-white",
-    "label": "Windows",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/windows-7_Windows_005BA4.svg",
-    "slug": "windows-7",
-    "label": "Windows",
-    "message": null,
-    "style": null,
-    "color": "005BA4",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/zeplin-white_Zeplin_FFF.svg",
-    "slug": "zeplin-white",
-    "label": "Zeplin",
-    "message": null,
-    "style": null,
-    "color": "FFF",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  },
-  {
-    "logo": "assets/icons/zeplin_Zeplin_f69833.svg",
-    "slug": "zeplin",
-    "label": "Zeplin",
-    "message": null,
-    "style": null,
-    "color": "f69833",
-    "label_color": null,
-    "logo_color": null,
-    "font": null
-  }
-]
+{
+  "root": "assets/icons/",
+  "data": [
+    {
+      "logo": "azure.svg",
+      "slug": "azure-white",
+      "label": "Azure",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "azure.svg",
+      "slug": "azure",
+      "label": "Azure",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "2892df"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "confluent-white.svg",
+      "slug": "confluent-white",
+      "label": "Confluent",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "confluent.svg",
+      "slug": "confluent",
+      "label": "Confluent",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "040531"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "dot-net-core-white.svg",
+      "slug": "dot-net-core-white",
+      "label": ".NET Core",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "dot-net-core.svg",
+      "slug": "dot-net-core",
+      "label": ".NET Core",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "5c2d91"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "gitcode.svg",
+      "slug": "gitcode-black",
+      "label": "GitCode",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "000"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "gitcode.svg",
+      "slug": "gitcode-white",
+      "label": "GitCode",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "gitcode.svg",
+      "slug": "gitcode",
+      "label": "GitCode",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "0d1117"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "gogs-white.svg",
+      "slug": "gogs-white",
+      "label": "Gogs",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "gogs.svg",
+      "slug": "gogs",
+      "label": "Gogs",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "e16146"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "hacktoberfest-black.svg",
+      "slug": "hacktoberfest-black",
+      "label": "Hacktoberfest",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "f3f0e0"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "hacktoberfest-white.svg",
+      "slug": "hacktoberfest-white",
+      "label": "Hacktoberfest",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "183717"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "hacktoberfest.svg",
+      "slug": "hacktoberfest",
+      "label": "Hacktoberfest",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "183717"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ibm-cloud-white.svg",
+      "slug": "ibm-cloud-white",
+      "label": "IBM Cloud",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ibm-cloud.svg",
+      "slug": "ibm-cloud",
+      "label": "IBM Cloud",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "1F70C1"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ibm-white.svg",
+      "slug": "ibm-white",
+      "label": "IBM",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ibm.svg",
+      "slug": "ibm",
+      "label": "IBM",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "1F70C1"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ieee-white.svg",
+      "slug": "ieee-white",
+      "label": "IEEE",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "ieee.svg",
+      "slug": "ieee",
+      "label": "IEEE",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "0a70a3"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "linkedin-blue.svg",
+      "slug": "linkedin-blue",
+      "label": "LinkedIn",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "007EBB"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "linkedin-white-logo.svg",
+      "slug": "linkedin-white-logo",
+      "label": "LinkedIn",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "linkedin-white.svg",
+      "slug": "linkedin-white",
+      "label": "LinkedIn",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "linkedin.svg",
+      "slug": "linkedin",
+      "label": "LinkedIn",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "007EBB"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "magento-orange.svg",
+      "slug": "magento-grey",
+      "label": "Magento",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "4d4d4d"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "magento-orange.svg",
+      "slug": "magento-white",
+      "label": "Magento",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "magento.svg",
+      "slug": "magento",
+      "label": "Magento",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "f26322"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "microsoft.svg",
+      "slug": "microsoft-white",
+      "label": "Microsoft",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "microsoft.svg",
+      "slug": "microsoft",
+      "label": "Microsoft",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "005BA4"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle-white.svg",
+      "slug": "oracle-cloud-white",
+      "label": "Oracle Cloud",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle.svg",
+      "slug": "oracle-cloud",
+      "label": "Oracle Cloud",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "C74634"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle-white.svg",
+      "slug": "oracle-white",
+      "label": "Oracle",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle.svg",
+      "slug": "oracle",
+      "label": "Oracle",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "C74634"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "orcid-white-logo.svg",
+      "slug": "orcid-grey-logo",
+      "label": "ORCID",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "A6A8AB"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "orcid-logo.svg",
+      "slug": "orcid-logo",
+      "label": "ORCID",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "A6CE39"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "orcid-white-logo.svg",
+      "slug": "orcid-white-logo",
+      "label": "ORCID",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "orcid-white.svg",
+      "slug": "orcid-white",
+      "label": "ORCID",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "orcid.svg",
+      "slug": "orcid",
+      "label": "ORCID",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "A6CE39"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "phacility.svg",
+      "slug": "phacility",
+      "label": "Phacility",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "play-framework.svg",
+      "slug": "play-framework",
+      "label": "Play Framework",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "plnkr-white.svg",
+      "slug": "plnkr-white",
+      "label": "Plnkr",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "plnkr.svg",
+      "slug": "plnkr",
+      "label": "Plnkr",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "333"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "sbc-blue.svg",
+      "slug": "sbc-blue",
+      "label": "SBC",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "1479be"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "sbc.svg",
+      "slug": "sbc",
+      "label": "SBC",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "d2692d"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "sourcegraph-black.svg",
+      "slug": "sourcegraph-black",
+      "label": "Sourcegraph",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "14171f"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "sourcegraph-white.svg",
+      "slug": "sourcegraph-white",
+      "label": "Sourcegraph",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "F34E3F"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "sourcegraph.svg",
+      "slug": "sourcegraph",
+      "label": "Sourcegraph",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "F34E3F"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle-white.svg",
+      "slug": "sql-developer-white",
+      "label": "SQL Developer",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "oracle.svg",
+      "slug": "sql-developer",
+      "label": "SQL Developer",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "C74634"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "twitter-white.svg",
+      "slug": "twitter-white",
+      "label": "Twitter",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "twitter.svg",
+      "slug": "twitter",
+      "label": "Twitter",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "1d9bf0"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "visual-studio.svg",
+      "slug": "visual-studio-white",
+      "label": "Visual Studio",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "visual-studio.svg",
+      "slug": "visual-studio",
+      "label": "Visual Studio",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "662E93"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "vs-code.svg",
+      "slug": "vs-code-black",
+      "label": "Visual Studio Code",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "000"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "vs-code.svg",
+      "slug": "vs-code-dark",
+      "label": "Visual Studio Code",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "003054"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "vs-code.svg",
+      "slug": "vs-code-white",
+      "label": "Visual Studio Code",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "vs-code.svg",
+      "slug": "vs-code",
+      "label": "Visual Studio Code",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "0060a9"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "windows-10-blue.svg",
+      "slug": "windows-10-blue",
+      "label": "Windows",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "00adef"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "windows-10.svg",
+      "slug": "windows-10",
+      "label": "Windows",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "windows-7.svg",
+      "slug": "windows-7-white",
+      "label": "Windows",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "windows-7.svg",
+      "slug": "windows-7",
+      "label": "Windows",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "005BA4"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "zeplin.svg",
+      "slug": "zeplin-white",
+      "label": "Zeplin",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "zeplin.svg",
+      "slug": "zeplin",
+      "label": "Zeplin",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "f69833"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    }
+  ]
+}

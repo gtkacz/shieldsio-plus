@@ -30,7 +30,7 @@ with Path("assets/data/css_named_colors.json").resolve().open() as f:
 
 # Create a list of (color_name, color_value) tuples for enum creation
 # Using a dict comprehension with .items() to remove duplicates
-data = list({item["slug"].upper(): item["hex"] for item in data}.items())
+data = list({item["slug"].replace("-", "_").upper(): item["hex"] for item in data}.items())
 
 # Dynamically create the CSSNamedColor enum with the processed color data
 CSSNamedColor = _CSSNamedColor("CSSNamedColor", data)

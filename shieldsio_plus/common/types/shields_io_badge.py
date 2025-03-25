@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from operator import itemgetter
 from pathlib import Path
-from typing import Any, Final, Optional
+from typing import Any, Final
 from urllib.parse import urlencode
 
 from loguru import logger
@@ -37,16 +37,16 @@ class ShieldsIOBadge:
 	slug: str
 	label: str
 	logo: SVG
-	message: Optional[str] = None
+	message: str | None = None
 	style: ShieldsIOBadgeStyle = ShieldsIOBadgeStyle.TRUE_FLAT
 	color: ShieldsIOColor = ShieldsIONamedColor.BLUE
-	label_color: Optional[ShieldsIOColor] = None
-	logo_color: Optional[ShieldsIOColor] = None
+	label_color: ShieldsIOColor | None = None
+	logo_color: ShieldsIOColor | None = None
 	font: WebSafeFont = WebSafeFont.DEFAULT
 	__BASE_URL: Final[str] = field(init=False, default="https://img.shields.io/badge/")
 	__color: str = field(init=False)
-	__label_color: Optional[str] = field(init=False)
-	__logo_color: Optional[str] = field(init=False)
+	__label_color: str | None = field(init=False)
+	__logo_color: str | None = field(init=False)
 
 	def __post_init__(self) -> None:
 		"""
@@ -67,7 +67,7 @@ class ShieldsIOBadge:
 		self.__logo_color = self.__parse_shields_io_color_object(self.logo_color)
 
 	@staticmethod
-	def __parse_shields_io_color_object(color_obj: Optional[ShieldsIOColor]) -> Optional[str]:
+	def __parse_shields_io_color_object(color_obj: ShieldsIOColor | None) -> str | None:
 		"""
 		Converts a ShieldsIOColor object to a string format suitable for Shield.io API.
 

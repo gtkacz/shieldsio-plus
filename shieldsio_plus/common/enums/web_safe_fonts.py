@@ -9,9 +9,9 @@ class _WebSafeFontData(TypedDict):
 	"""
 	Definition of a web-safe font dictionary.
 
-	Each dictionary contains the following
-	- family-name: The full name of the font
-	- style: The CSS font-family style definition
+	Each dictionary contains:
+		- family-name: The full name of the font
+		- style: The CSS font-family style definition
 	"""
 
 	family_name: str
@@ -40,12 +40,16 @@ class _WebSafeFont(BetterEnum):
 		return [cls(d) for d in cls.values if d["family"] == key]
 
 	@property
+	def family_names(self) -> list[str]:
+		"""
+		Gets the full names of all fonts in the family.
+		"""
+		return [d["family-name"] for d in self.values]
+
+	@property
 	def family_name(self) -> str:
 		"""
-		Gets the full name of the font.
-
-		Returns:
-			The family name of the font (e.g., "Arial", "Times New Roman").
+		Gets the full name of the font (e.g., "Arial", "Times New Roman").
 		"""
 		return self.value["family-name"]
 
@@ -53,9 +57,6 @@ class _WebSafeFont(BetterEnum):
 	def style(self) -> str:
 		"""
 		Gets the CSS font-family style definition.
-
-		Returns:
-			The CSS font-family string including fallbacks.
 		"""
 		return self.value["style"]
 
@@ -63,9 +64,6 @@ class _WebSafeFont(BetterEnum):
 	def family(self) -> "FontFamily":
 		"""
 		Gets the font family enum this font belongs to.
-
-		Returns:
-			The FontFamily enum value for this font.
 		"""
 		return self.value["family"]
 
@@ -82,9 +80,6 @@ class _FontFamily(BetterEnum):
 	def fonts(self) -> list["WebSafeFont"]:
 		"""
 		Gets all fonts belonging to this font family.
-
-		Returns:
-			A list of font value dictionaries in this family.
 		"""
 		return WebSafeFont.get_values_by_key(self)
 

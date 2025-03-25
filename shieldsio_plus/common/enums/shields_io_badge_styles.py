@@ -33,3 +33,8 @@ class ShieldsIOBadgeStyle(BetterStrEnum):
 	# Special variants that may have custom rendering in the application
 	TRUE_FLAT = "flat"
 	TRUE_FLAT_SQUARE = "flat-square"
+
+	@property
+	def styles(self) -> list[str]:
+		"""Return the style names."""
+		return [name.replace("_", "-").lower() for name in self.names]

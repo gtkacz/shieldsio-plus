@@ -49,6 +49,16 @@ class ShieldsIONamedColor(BetterEnum):
 	INFORMATIONAL = BLUE
 	INACTIVE = LIGHTGREY
 
+	@classmethod
+	def slugs(cls) -> list[str]:
+		"""
+		Gets a list of all the color slugs.
+
+		Returns:
+			list[str]: A list of all the color slugs.
+		"""
+		return [color.value[0] for color in cls]
+
 	@property
 	def slug(self) -> str:
 		"""

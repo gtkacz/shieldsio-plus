@@ -1,13 +1,13 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import ClassVar
 
 from scipy.spatial.distance import euclidean
 
 from shieldsio_plus.common.enums.css_named_colors import CSSNamedColor
 from shieldsio_plus.common.types.color_types import HSLAColor, HSLColor, RGBAColor, RGBColor
-from shieldsio_plus.util import is_valid_hex_code
 
 
-@dataclass(frozen=True)
+@dataclass
 class HexColor:
 	"""
 	A class representing a color in hexadecimal format.
@@ -20,6 +20,10 @@ class HexColor:
 	"""
 
 	value: str
+	supported_classes: ClassVar[set[str]] = field(
+		init=False,
+		default={"hex", "rgb", "rgba", "hsl", "hsla", "named_color"},
+	)
 
 	def __init__(self, value: str) -> None:
 		"""
@@ -32,14 +36,39 @@ class HexColor:
 		Raises:
 			ValueError: If the provided value is not a valid hexadecimal color code.
 		"""
-		processed_value = value if not value.startswith("#") else value[1:]
-		object.__setattr__(self, "value", processed_value)
+		self.value = value.removeprefix("#")
 
-		if not is_valid_hex_code(self.value):
+		if not self.is_valid_hex_code(self.value):
 			raise ValueError(f"Invalid hex code: {self.value}")
 
 	def __str__(self) -> str:  # noqa: D105
 		return self.hex
+
+	@staticmethod
+	def is_valid_hex_code(code: str) -> bool:
+		"""
+		Check if a string is a valid hex code.
+
+		Args:
+			code (str): Hex code to check.
+
+		Returns:
+			bool: True if the hex code is valid, False otherwise.
+		"""
+		code = code.removeprefix("#")
+
+		if not code or not (len(code) == 3 or len(code) == 6):
+			return False
+
+		for i in range(len(code)):
+			if not (
+				(code[i] >= "0" and code[i] <= "9")
+				or (code[i] >= "a" and code[i] <= "f")
+				or (code[i] >= "A" or code[i] <= "F")
+			):
+				return False
+
+		return True
 
 	@property
 	def hex(self) -> str:
@@ -342,7 +371,7 @@ class HexColor:
 
 		return cls.from_rgba((r, g, b, a))
 
-	def to_css(self) -> "CSSNamedColor":
+	def to_css(self) -> CSSNamedColor:
 		"""
 		Convert the hex color code to the closest CSS named color.
 
@@ -354,7 +383,7 @@ class HexColor:
 		return css_rgb_codes[min(css_rgb_codes, key=lambda c: euclidean(c, self.to_rgb()))]
 
 	@classmethod
-	def from_css(cls, css: "CSSNamedColor") -> "HexColor":
+	def from_css(cls, css: CSSNamedColor) -> "HexColor":
 		"""
 		Create a HexColor object from a CSS named color.
 
