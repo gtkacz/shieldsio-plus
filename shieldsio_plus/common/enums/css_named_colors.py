@@ -25,7 +25,7 @@ class _CSSNamedColor(BetterEnum):
 
 
 # Load CSS color definitions from JSON file
-with Path("assets/data/css_named_colors.json").resolve().open() as f:
+with Path("assets/data/css_named_colors.json").open(encoding="utf-8") as f:
 	data = json.load(f)
 
 # Create a list of (color_name, color_value) tuples for enum creation

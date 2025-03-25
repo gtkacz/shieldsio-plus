@@ -149,6 +149,17 @@ class ShieldsIOBadge:
 		Args:
 			path: The directory path where the badge will be saved.
 		"""
+		# Download the SVG data from Shields.io
+		img_data = SVG.from_url(self.build_shieldsio_url())
+
+		# Apply TRUE_FLAT specific transformations
+		if self.style.name == ShieldsIOBadgeStyle.TRUE_FLAT.name:
+			img_data.parse_real_flat()
+
+		# Apply custom font if not using the default
+		if self.font != WebSafeFont.DEFAULT:
+			img_data.change_font(self.font)
+
 		# Create the full path including style subdirectory
 		self.path = Path(
 			path
@@ -163,21 +174,6 @@ class ShieldsIOBadge:
 
 		# Set the file path with slug as filename
 		self.path /= f"{self.slug}.svg"
-
-		# Download the SVG data from Shields.io
-		img_data = SVG.from_url(self.build_shieldsio_url())
-
-		# Apply TRUE_FLAT or TRUE_FLAT_SQUARE specific transformations
-		if self.style.name in {ShieldsIOBadgeStyle.TRUE_FLAT.name, ShieldsIOBadgeStyle.TRUE_FLAT_SQUARE.name}:
-			img_data.parse_real_flat()
-
-		# Apply custom font if not using the default
-		if self.font != WebSafeFont.DEFAULT:
-			img_data.change_font(self.font)
-
-		# Apply custom font if not using the default
-		if self.font != WebSafeFont.DEFAULT:
-			img_data.change_svg_color(self.font)
 
 		# Write the SVG to file
 		img_data.save_to_file(self.path)

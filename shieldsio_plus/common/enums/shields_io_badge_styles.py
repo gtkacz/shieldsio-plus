@@ -19,7 +19,6 @@ class ShieldsIOBadgeStyle(BetterStrEnum):
 		FOR_THE_BADGE: Larger style with uppercase text.
 		SOCIAL: Style mimicking social media badges.
 		TRUE_FLAT: Style that removes text shadows and color gradients from Shields.io's `flat` style
-		TRUE_FLAT_SQUARE: Style that removes text shadows and color gradients from Shields.io's `flat-square` style
 	"""
 
 	_settings_: ClassVar = NoAlias  # Disable aliasing in the enum
@@ -31,8 +30,7 @@ class ShieldsIOBadgeStyle(BetterStrEnum):
 	SOCIAL = "social"
 
 	# Special variants that may have custom rendering in the application
-	TRUE_FLAT = "flat"
-	TRUE_FLAT_SQUARE = "flat-square"
+	TRUE_FLAT = "flat-square"
 
 	@property
 	def styles(self) -> list[str]:

@@ -39,6 +39,23 @@ class _WebSafeFont(BetterEnum):
 		"""
 		return [cls(d) for d in cls.values if d["family"] == key]
 
+	@classmethod
+	def from_family_name(cls, family_name: str) -> "WebSafeFont":
+		"""
+		Returns the font definition with the specified family name.
+
+		Args:
+			family_name: The full name of the font to search for.
+
+		Returns:
+			The font definition with the specified family name.
+		"""
+		for element in cls.members:
+			if element.family_name.upper() == family_name.upper():
+				return element
+
+		raise ValueError(f"Font with family name '{family_name}' not found.")
+
 	@property
 	def family_names(self) -> list[str]:
 		"""
@@ -85,7 +102,7 @@ class _FontFamily(BetterEnum):
 
 
 # Load web safe font definitions from JSON file
-with Path("assets/data/web_safe_fonts.json").resolve().open() as f:
+with Path("assets/data/web_safe_fonts.json").open(encoding="utf-8") as f:
 	raw_data = json.load(f)
 
 # Create font family enum entries

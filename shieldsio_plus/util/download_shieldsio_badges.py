@@ -30,5 +30,5 @@ def download_shields_io_badges(shields: Sequence[ShieldsIOBadge], badge_path: st
 		for future in concurrent.futures.as_completed(futures):
 			future.result()
 
-	with Path(json_path).resolve().open("w") as f:
+	with Path(json_path).open("w", encoding="utf-8") as f:
 		json_dump(sorted(badges, key=itemgetter("slug")), f, indent=4)

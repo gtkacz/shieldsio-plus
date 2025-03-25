@@ -1,6 +1,7 @@
 import json
 from argparse import ArgumentParser
 from pathlib import Path
+from typing import Optional, Sequence
 
 from loguru import logger
 
@@ -9,7 +10,7 @@ from shieldsio_plus.common.enums.web_safe_fonts import WebSafeFont
 
 def update_available_logos(markdown_filename: str, badges_json_filename: str) -> None:
 	# Read badge data from JSON file
-	with Path(badges_json_filename).resolve().open(encoding="utf-8") as f:
+	with Path(badges_json_filename).open(encoding="utf-8") as f:
 		data = json.load(f)
 
 	# Extract unique slugs
@@ -36,7 +37,7 @@ def update_available_logos(markdown_filename: str, badges_json_filename: str) ->
 	new_table = "\n".join(new_table_lines)
 
 	# Read current README.md content
-	with Path(markdown_filename).resolve().open(encoding="utf-8") as f:
+	with Path(markdown_filename).open(encoding="utf-8") as f:
 		lines = f.readlines()
 
 	# Process file and replace table
@@ -70,7 +71,7 @@ def update_available_logos(markdown_filename: str, badges_json_filename: str) ->
 	new_content = "\n".join(new_lines) + "\n"
 
 	# Write updated content back to the file
-	with Path(markdown_filename).resolve().open("w", encoding="utf-8") as f:
+	with Path(markdown_filename).open("w", encoding="utf-8") as f:
 		f.write(new_content)
 
 	# Print status message
@@ -94,7 +95,7 @@ def update_available_fonts(markdown_filename: str) -> None:
 	new_table = "\n".join(new_table_lines)
 
 	# Read current README.md content
-	with Path(markdown_filename).resolve().open(encoding="utf-8") as f:
+	with Path(markdown_filename).open(encoding="utf-8") as f:
 		lines = f.readlines()
 
 	# Process file and replace table
@@ -128,14 +129,14 @@ def update_available_fonts(markdown_filename: str) -> None:
 	new_content = "\n".join(new_lines) + "\n"
 
 	# Write updated content back to the file
-	with Path(markdown_filename).resolve().open("w", encoding="utf-8") as f:
+	with Path(markdown_filename).open("w", encoding="utf-8") as f:
 		f.write(new_content)
 
 	# Print status message
 	logger.info(f"Updated {markdown_filename} with {len(all_fonts)} unique fonts.")
 
 
-def script() -> None:
+def script(args: Optional[Sequence[str]] = None) -> None:
 	"""
 	Script to update a markdown file with a table of badge slugs.
 
@@ -163,7 +164,7 @@ def script() -> None:
 	)
 
 	# Parse arguments
-	args = parser.parse_args()
+	args = parser.parse_args(args)
 
 	# Print help if no arguments provided
 	if not args:

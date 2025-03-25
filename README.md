@@ -93,7 +93,6 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | flat | ![windows-10-blue](./assets/shields/flat/windows-10-blue.svg) |
 | true_flat* | ![windows-10-blue](./assets/shields/true_flat/windows-10-blue.svg) |
 | flat_square | ![windows-10-blue](./assets/shields/flat_square/windows-10-blue.svg) |
-| true_flat_square* | ![windows-10-blue](./assets/shields/true_flat_square/windows-10-blue.svg) |
 | plastic | ![windows-10-blue](./assets/shields/plastic/windows-10-blue.svg) |
 | for_the_badge | ![windows-10-blue](./assets/shields/for_the_badge/windows-10-blue.svg) |
 | social | ![windows-10](./assets/shields/social/windows-10.svg) |

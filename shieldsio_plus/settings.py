@@ -14,11 +14,13 @@ from os import environ
 from pathlib import Path
 
 from dotenv import load_dotenv
+from loguru import logger
 
 # Load environment variables from .env file
+if not Path(".env").exists():
+	raise FileNotFoundError("No `.env` file found. Create one from `.env.template`.")
+
 load_dotenv()
-if not environ.get("DJANGO_SECRET_KEY"):
-	raise ValueError("`.env` file is not properly configured. Are you using `.env.template`?")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,6 +37,11 @@ DEBUG = environ["ENVIRONMENT"] == "development"
 
 ALLOWED_HOSTS = ["*"]
 
+# Determining logging file path
+logger.add(
+	"logs/shieldsio_plus.log" if DEBUG else "/var/log/shieldsio_plus.log",
+	rotation="10 MB",
+)
 
 # Application definition
 

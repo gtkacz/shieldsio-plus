@@ -51,7 +51,7 @@ class SVG:
 		Returns:
 			A new SVG object with content from the file.
 		"""
-		with Path(path).resolve().open() as handler:
+		with Path(path).open(encoding="utf-8") as handler:
 			return cls(handler.read())
 
 	@classmethod
@@ -131,34 +131,15 @@ class SVG:
 		return tag.split("}")[-1] if "}" in tag else tag
 
 	@staticmethod
-	def remove_linear_gradients(parent: BeautifulSoup) -> None:
+	def apply_rounded_corners(soup: BeautifulSoup) -> None:
 		"""
-		Recursively remove all linearGradient elements from a BeautifulSoup object.
+		Apply rounded corners to the SVG elements.
 
 		Args:
-			parent: Parent BeautifulSoup object to process.
+			soup: BeautifulSoup object representing the SVG content.
 		"""
-		linear_gradients = parent.find_all(lambda tag: SVG.local_name(tag.name) == "linearGradient")
-		for gradient in linear_gradients:
-			gradient.decompose()
-
-	@staticmethod
-	def remove_shadow_texts(parent: BeautifulSoup) -> None:
-		"""
-		Recursively remove text elements that appear to be shadows.
-
-		Removes text elements with aria-hidden="true" or fill-opacity
-		attribute not equal to "1".
-
-		Args:
-			parent: Parent BeautifulSoup object to process.
-		"""
-		shadow_texts = parent.find_all(
-			lambda tag: SVG.local_name(tag.name) == "text"
-			and (tag.get("aria-hidden") == "true" or (tag.get("fill-opacity") and tag.get("fill-opacity") != "1")),
-		)
-		for text in shadow_texts:
-			text.decompose()
+		for rect in soup.find_all(lambda tag: SVG.local_name(tag.name) == "rect"):
+			rect["rx"] = 3
 
 	def parse_real_flat(self) -> None:
 		"""
@@ -171,12 +152,12 @@ class SVG:
 			ValueError: If the SVG content cannot be parsed.
 		"""
 		try:
-			soup = BeautifulSoup(self.svg_str, "xml")
+			soup = BeautifulSoup(self.svg_str, "lxml")
 		except Exception as e:
+			breakpoint()
 			raise ValueError(f"Invalid SVG content: {self.svg_str}") from e
 
-		self.remove_linear_gradients(soup)
-		self.remove_shadow_texts(soup)
+		self.apply_rounded_corners(soup)
 
 		self.svg_str = str(soup)
 		self.svg_to_base64()  # Update base64 after modifying SVG
@@ -230,5 +211,5 @@ class SVG:
 		Args:
 			path: Path to save the SVG content to.
 		"""
-		with Path(path).resolve().open("w") as handler:
+		with Path(path).open("w", encoding="utf-8") as handler:
 			handler.write(self.svg_str)

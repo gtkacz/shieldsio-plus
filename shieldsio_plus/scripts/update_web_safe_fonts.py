@@ -103,7 +103,7 @@ def script() -> None:
 		parsed_fonts[aliases.get(key, key)] += fonts_map
 
 	# Write parsed font data to JSON file
-	with Path(args.output_path).resolve().open("w") as file:
+	with Path(args.output_path).open("w", encoding="utf-8") as file:
 		dump(parsed_fonts, file, indent=4)
 
 

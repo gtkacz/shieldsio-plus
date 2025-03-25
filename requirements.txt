@@ -7,3 +7,4 @@ django_extensions
 djangorestframework
 drf_spectacular
 python-dotenv
+lxml
