@@ -52,20 +52,20 @@ def script() -> None:
 			for style in ShieldsIOBadgeStyle.members
 		])
 
-	win_logo = next(dic for dic in manifest["data"] if dic["slug"] == "windows-10-blue")
+	font_logo = next(dic for dic in manifest["data"] if dic["slug"] == "twitter")
 
 	for font in WebSafeFont:
-		path = str(BASE_DIR) + "/" + manifest["root"] + win_logo["logo"]
+		path = str(BASE_DIR) + "/" + manifest["root"] + font_logo["logo"]
 
 		params = {
-			"slug": win_logo["slug"],
-			"label": win_logo["label"],
+			"slug": font_logo["slug"],
+			"label": font_logo["label"],
 			"logo": SVG.from_file(path),
-			"message": win_logo["message"],
+			"message": font_logo["message"],
 			"style": ShieldsIOBadgeStyle.FLAT,
-			"color": load_manifest_color(win_logo["color"]),
-			"label_color": load_manifest_color(win_logo["label_color"]) if win_logo.get("label_color", None) else None,
-			"logo_color": load_manifest_color(win_logo["logo_color"]) if win_logo.get("logo_color", None) else None,
+			"color": load_manifest_color(font_logo["color"]),
+			"label_color": load_manifest_color(font_logo["label_color"]) if font_logo.get("label_color", None) else None,
+			"logo_color": load_manifest_color(font_logo["logo_color"]) if font_logo.get("logo_color", None) else None,
 			"font": font,
 		}
 

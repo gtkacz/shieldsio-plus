@@ -90,63 +90,63 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 
 | Style | Sample |
 | --- | --- |
-| flat | ![windows-10-blue](./assets/shields/flat/windows-10-blue.svg) |
-| true_flat* | ![windows-10-blue](./assets/shields/true_flat/windows-10-blue.svg) |
-| flat_square | ![windows-10-blue](./assets/shields/flat_square/windows-10-blue.svg) |
-| plastic | ![windows-10-blue](./assets/shields/plastic/windows-10-blue.svg) |
-| for_the_badge | ![windows-10-blue](./assets/shields/for_the_badge/windows-10-blue.svg) |
-| social | ![windows-10](./assets/shields/social/windows-10.svg) |
+| flat | ![twitter](./assets/shields/flat/twitter.svg) |
+| true_flat* | ![twitter](./assets/shields/true_flat/twitter.svg) |
+| flat_square | ![twitter](./assets/shields/flat_square/twitter.svg) |
+| plastic | ![twitter](./assets/shields/plastic/twitter.svg) |
+| for_the_badge | ![twitter](./assets/shields/for_the_badge/twitter.svg) |
+| social | ![windows-10](./assets/shields/social/twitter-white.svg) |
 
 #### Available Fonts
 
 | Family Name | Type | Sample |
 | --- | --- | --- |
-| Andale Mono | Monospace | ![windows-10-blue](./assets/shields/true_flat/andale_mono/windows-10-blue.svg) |
-| Arial | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/arial/windows-10-blue.svg) |
-| Arial Black | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/arial_black/windows-10-blue.svg) |
-| Arial Narrow | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/arial_narrow/windows-10-blue.svg) |
-| Arial Rounded Mt Bold | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/arial_rounded_mt_bold/windows-10-blue.svg) |
-| Avant Garde | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/avant_garde/windows-10-blue.svg) |
-| Baskerville | Serif | ![windows-10-blue](./assets/shields/true_flat/baskerville/windows-10-blue.svg) |
-| Big Caslon | Serif | ![windows-10-blue](./assets/shields/true_flat/big_caslon/windows-10-blue.svg) |
-| Bodoni Mt | Serif | ![windows-10-blue](./assets/shields/true_flat/bodoni_mt/windows-10-blue.svg) |
-| Book Antiqua | Serif | ![windows-10-blue](./assets/shields/true_flat/book_antiqua/windows-10-blue.svg) |
-| Brush Script Mt | Cursive | ![windows-10-blue](./assets/shields/true_flat/brush_script_mt/windows-10-blue.svg) |
-| Calibri | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/calibri/windows-10-blue.svg) |
-| Calisto Mt | Serif | ![windows-10-blue](./assets/shields/true_flat/calisto_mt/windows-10-blue.svg) |
-| Cambria | Serif | ![windows-10-blue](./assets/shields/true_flat/cambria/windows-10-blue.svg) |
-| Candara | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/candara/windows-10-blue.svg) |
-| Century Gothic | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/century_gothic/windows-10-blue.svg) |
-| Consolas | Monospace | ![windows-10-blue](./assets/shields/true_flat/consolas/windows-10-blue.svg) |
-| Copperplate | Fantasy | ![windows-10-blue](./assets/shields/true_flat/copperplate/windows-10-blue.svg) |
-| Courier New | Monospace | ![windows-10-blue](./assets/shields/true_flat/courier_new/windows-10-blue.svg) |
-| Didot | Serif | ![windows-10-blue](./assets/shields/true_flat/didot/windows-10-blue.svg) |
-| Franklin Gothic Medium | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/franklin_gothic_medium/windows-10-blue.svg) |
-| Futura | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/futura/windows-10-blue.svg) |
-| Garamond | Serif | ![windows-10-blue](./assets/shields/true_flat/garamond/windows-10-blue.svg) |
-| Geneva | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/geneva/windows-10-blue.svg) |
-| Georgia | Serif | ![windows-10-blue](./assets/shields/true_flat/georgia/windows-10-blue.svg) |
-| Gill Sans | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/gill_sans/windows-10-blue.svg) |
-| Goudy Old Style | Serif | ![windows-10-blue](./assets/shields/true_flat/goudy_old_style/windows-10-blue.svg) |
-| Helvetica Neue | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/helvetica_neue/windows-10-blue.svg) |
-| Hoefler Text | Serif | ![windows-10-blue](./assets/shields/true_flat/hoefler_text/windows-10-blue.svg) |
-| Impact | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/impact/windows-10-blue.svg) |
-| Lucida Bright | Serif | ![windows-10-blue](./assets/shields/true_flat/lucida_bright/windows-10-blue.svg) |
-| Lucida Console | Monospace | ![windows-10-blue](./assets/shields/true_flat/lucida_console/windows-10-blue.svg) |
-| Lucida Grande | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/lucida_grande/windows-10-blue.svg) |
-| Lucida Sans Typewriter | Monospace | ![windows-10-blue](./assets/shields/true_flat/lucida_sans_typewriter/windows-10-blue.svg) |
-| Optima | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/optima/windows-10-blue.svg) |
-| Palatino | Serif | ![windows-10-blue](./assets/shields/true_flat/palatino/windows-10-blue.svg) |
-| Papyrus | Fantasy | ![windows-10-blue](./assets/shields/true_flat/papyrus/windows-10-blue.svg) |
-| Perpetua | Serif | ![windows-10-blue](./assets/shields/true_flat/perpetua/windows-10-blue.svg) |
-| Rockwell | Serif | ![windows-10-blue](./assets/shields/true_flat/rockwell/windows-10-blue.svg) |
-| Rockwell Extra Bold | Monospace | ![windows-10-blue](./assets/shields/true_flat/rockwell_extra_bold/windows-10-blue.svg) |
-| Segoe Ui | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/segoe_ui/windows-10-blue.svg) |
-| Tahoma | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/tahoma/windows-10-blue.svg) |
-| Timesnewroman | Serif | ![windows-10-blue](./assets/shields/true_flat/timesnewroman/windows-10-blue.svg) |
-| Trebuchet Ms | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/trebuchet_ms/windows-10-blue.svg) |
-| Verdana | Sans-Serif | ![windows-10-blue](./assets/shields/true_flat/verdana/windows-10-blue.svg) |
-| Monaco | Monospace | ![windows-10-blue](./assets/shields/true_flat/monaco/windows-10-blue.svg) |
+| Andale Mono | Monospace | ![twitter](./assets/shields/flat/andale_mono/twitter.svg) |
+| Arial | Sans-Serif | ![twitter](./assets/shields/flat/arial/twitter.svg) |
+| Arial Black | Sans-Serif | ![twitter](./assets/shields/flat/arial_black/twitter.svg) |
+| Arial Narrow | Sans-Serif | ![twitter](./assets/shields/flat/arial_narrow/twitter.svg) |
+| Arial Rounded Mt Bold | Sans-Serif | ![twitter](./assets/shields/flat/arial_rounded_mt_bold/twitter.svg) |
+| Avant Garde | Sans-Serif | ![twitter](./assets/shields/flat/avant_garde/twitter.svg) |
+| Baskerville | Serif | ![twitter](./assets/shields/flat/baskerville/twitter.svg) |
+| Big Caslon | Serif | ![twitter](./assets/shields/flat/big_caslon/twitter.svg) |
+| Bodoni Mt | Serif | ![twitter](./assets/shields/flat/bodoni_mt/twitter.svg) |
+| Book Antiqua | Serif | ![twitter](./assets/shields/flat/book_antiqua/twitter.svg) |
+| Brush Script Mt | Cursive | ![twitter](./assets/shields/flat/brush_script_mt/twitter.svg) |
+| Calibri | Sans-Serif | ![twitter](./assets/shields/flat/calibri/twitter.svg) |
+| Calisto Mt | Serif | ![twitter](./assets/shields/flat/calisto_mt/twitter.svg) |
+| Cambria | Serif | ![twitter](./assets/shields/flat/cambria/twitter.svg) |
+| Candara | Sans-Serif | ![twitter](./assets/shields/flat/candara/twitter.svg) |
+| Century Gothic | Sans-Serif | ![twitter](./assets/shields/flat/century_gothic/twitter.svg) |
+| Consolas | Monospace | ![twitter](./assets/shields/flat/consolas/twitter.svg) |
+| Copperplate | Fantasy | ![twitter](./assets/shields/flat/copperplate/twitter.svg) |
+| Courier New | Monospace | ![twitter](./assets/shields/flat/courier_new/twitter.svg) |
+| Didot | Serif | ![twitter](./assets/shields/flat/didot/twitter.svg) |
+| Franklin Gothic Medium | Sans-Serif | ![twitter](./assets/shields/flat/franklin_gothic_medium/twitter.svg) |
+| Futura | Sans-Serif | ![twitter](./assets/shields/flat/futura/twitter.svg) |
+| Garamond | Serif | ![twitter](./assets/shields/flat/garamond/twitter.svg) |
+| Geneva | Sans-Serif | ![twitter](./assets/shields/flat/geneva/twitter.svg) |
+| Georgia | Serif | ![twitter](./assets/shields/flat/georgia/twitter.svg) |
+| Gill Sans | Sans-Serif | ![twitter](./assets/shields/flat/gill_sans/twitter.svg) |
+| Goudy Old Style | Serif | ![twitter](./assets/shields/flat/goudy_old_style/twitter.svg) |
+| Helvetica Neue | Sans-Serif | ![twitter](./assets/shields/flat/helvetica_neue/twitter.svg) |
+| Hoefler Text | Serif | ![twitter](./assets/shields/flat/hoefler_text/twitter.svg) |
+| Impact | Sans-Serif | ![twitter](./assets/shields/flat/impact/twitter.svg) |
+| Lucida Bright | Serif | ![twitter](./assets/shields/flat/lucida_bright/twitter.svg) |
+| Lucida Console | Monospace | ![twitter](./assets/shields/flat/lucida_console/twitter.svg) |
+| Lucida Grande | Sans-Serif | ![twitter](./assets/shields/flat/lucida_grande/twitter.svg) |
+| Lucida Sans Typewriter | Monospace | ![twitter](./assets/shields/flat/lucida_sans_typewriter/twitter.svg) |
+| Optima | Sans-Serif | ![twitter](./assets/shields/flat/optima/twitter.svg) |
+| Palatino | Serif | ![twitter](./assets/shields/flat/palatino/twitter.svg) |
+| Papyrus | Fantasy | ![twitter](./assets/shields/flat/papyrus/twitter.svg) |
+| Perpetua | Serif | ![twitter](./assets/shields/flat/perpetua/twitter.svg) |
+| Rockwell | Serif | ![twitter](./assets/shields/flat/rockwell/twitter.svg) |
+| Rockwell Extra Bold | Monospace | ![twitter](./assets/shields/flat/rockwell_extra_bold/twitter.svg) |
+| Segoe Ui | Sans-Serif | ![twitter](./assets/shields/flat/segoe_ui/twitter.svg) |
+| Tahoma | Sans-Serif | ![twitter](./assets/shields/flat/tahoma/twitter.svg) |
+| Timesnewroman | Serif | ![twitter](./assets/shields/flat/timesnewroman/twitter.svg) |
+| Trebuchet Ms | Sans-Serif | ![twitter](./assets/shields/flat/trebuchet_ms/twitter.svg) |
+| Verdana | Sans-Serif | ![twitter](./assets/shields/flat/verdana/twitter.svg) |
+| Monaco | Monospace | ![twitter](./assets/shields/flat/monaco/twitter.svg) |
 
 ## Expanding
 

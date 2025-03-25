@@ -89,7 +89,7 @@ def update_available_fonts(markdown_filename: str) -> None:
 
 	for font in all_fonts:
 		if font != WebSafeFont.DEFAULT:
-			line = f"| {font.family_name.title()} | {font.family.value.title()} | ![windows-10-blue](./assets/shields/true_flat/{font.name.lower()}/windows-10-blue.svg) |"  # noqa: E501
+			line = f"| {font.family_name.title()} | {font.family.value.title()} | ![twitter](./assets/shields/flat/{font.name.lower()}/twitter.svg) |"  # noqa: E501
 			new_table_lines.append(line)
 
 	new_table = "\n".join(new_table_lines)
