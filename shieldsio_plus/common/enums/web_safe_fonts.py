@@ -47,6 +47,9 @@ class _WebSafeFont(BetterEnum):
 		Args:
 			family_name: The full name of the font to search for.
 
+		Raises:
+			ValueError: If the font with the specified family name is not found.
+
 		Returns:
 			The font definition with the specified family name.
 		"""

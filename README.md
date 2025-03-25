@@ -150,7 +150,7 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | Verdana | Sans-Serif | ![twitter](./assets/shields/flat/verdana/twitter.svg) |
 | Monaco | Monospace | ![twitter](./assets/shields/flat/monaco/twitter.svg) |
 
-##### Google Fonts
+##### External Fonts
 | Family Name | Type | Sample |
 | --- | --- | --- |
 | Tektur | Sans-Serif | ![twitter](./assets/shields/flat/google/twitter.svg) |

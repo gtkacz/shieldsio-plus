@@ -32,7 +32,8 @@ def write_metadata(metadata_path: str = "./assets/data/metadata") -> None:
 
 
 def should_run(
-	manifest_path: str = "./assets/data/manifest.json", metadata_path: str = "./assets/data/metadata",
+	manifest_path: str = "./assets/data/manifest.json",
+	metadata_path: str = "./assets/data/metadata",
 ) -> bool:
 	"""
 	Check if the script should run based on the last run time.

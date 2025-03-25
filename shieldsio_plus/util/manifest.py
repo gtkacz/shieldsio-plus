@@ -50,14 +50,14 @@ def validate_manifest(path: str = "assets/data/manifest.json") -> None:  # noqa:
 
 		if color["class"] not in HexColor.supported_classes:
 			return ValidationError(
-				f"Invalid color class: {color['class']}, should be one of {HexColor.supported_classes}"
+				f"Invalid color class: {color['class']}, should be one of {HexColor.supported_classes}",
 			)
 
 		try:
 			load_manifest_color(color)
 
 		except Exception as e:  # noqa: BLE001
-			return (ValidationError(e))
+			return ValidationError(e)
 
 	with Path(path).open(encoding="utf-8") as f:
 		manifest = json.load(f)

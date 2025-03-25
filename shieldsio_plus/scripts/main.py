@@ -64,7 +64,9 @@ def script() -> None:
 			"message": font_logo["message"],
 			"style": ShieldsIOBadgeStyle.FLAT,
 			"color": load_manifest_color(font_logo["color"]),
-			"label_color": load_manifest_color(font_logo["label_color"]) if font_logo.get("label_color", None) else None,
+			"label_color": load_manifest_color(font_logo["label_color"])
+			if font_logo.get("label_color", None)
+			else None,
 			"logo_color": load_manifest_color(font_logo["logo_color"]) if font_logo.get("logo_color", None) else None,
 			"font": font,
 		}
