@@ -1,40 +1,40 @@
-name: Repository update scripts
+# name: Repository update scripts
 
-on:
-  push:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  update-repo:
-    runs-on: ubuntu-latest
+# jobs:
+#   update-repo:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4.2.2
-      with:
-        fetch-depth: 0
+#     steps:
+#     - uses: actions/checkout@v4.2.2
+#       with:
+#         fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v5.4.0
-      with:
-        python-version: '3.x'
+#     - name: Set up Python
+#       uses: actions/setup-python@v5.4.0
+#       with:
+#         python-version: '3.x'
 
-    - name: Install dependencies
-      run: |
-        curl -LsSf https://astral.sh/uv/install.sh | sh
-        uv pip install --system -r requirements.scripts.txt
+#     - name: Install dependencies
+#       run: |
+#         curl -LsSf https://astral.sh/uv/install.sh | sh
+#         uv pip install --system -r requirements.scripts.txt
 
-    - name: Run script to update repository data
-      run: |
-        uv run ipython shieldsio_plus/main.py
-        uv run ipython shieldsio_plus/scripts/update_readme.py
+#     - name: Run script to update repository data
+#       run: |
+#         uv run ipython shieldsio_plus/main.py
+#         uv run ipython shieldsio_plus/scripts/update_readme.py
 
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add .
-        git diff --quiet && git diff --staged --quiet || git commit -m "Autoupdate README.md"
-        git push
+#     - name: Commit and push changes
+#       run: |
+#         git config --local user.email "github-actions[bot]@users.noreply.github.com"
+#         git config --local user.name "github-actions[bot]"
+#         git add .
+#         git diff --quiet && git diff --staged --quiet || git commit -m "Autoupdate README.md"
+#         git push

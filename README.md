@@ -99,6 +99,8 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 
 #### Available Fonts
 
+##### Web-safe Fonts
+
 | Family Name | Type | Sample |
 | --- | --- | --- |
 | Andale Mono | Monospace | ![twitter](./assets/shields/flat/andale_mono/twitter.svg) |
@@ -147,6 +149,11 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | Trebuchet Ms | Sans-Serif | ![twitter](./assets/shields/flat/trebuchet_ms/twitter.svg) |
 | Verdana | Sans-Serif | ![twitter](./assets/shields/flat/verdana/twitter.svg) |
 | Monaco | Monospace | ![twitter](./assets/shields/flat/monaco/twitter.svg) |
+
+##### Google Fonts
+| Family Name | Type | Sample |
+| --- | --- | --- |
+| Tektur | Sans-Serif | ![twitter](./assets/shields/flat/google/twitter.svg) |
 
 ## Expanding
 

@@ -12,6 +12,14 @@ from shieldsio_plus.common.types.hex_code import HexColor
 from shieldsio_plus.common.types.svg import SVG
 
 
+class ValidationError(ValueError):
+	"""Failed to validate the manifest file."""
+
+	def __init__(self, message: str, logo: Optional[dict[str, str]] = None) -> None:  # noqa: D107
+		self.message = f"{message} in {logo['slug']}" if logo else message
+		super().__init__(self.message)
+
+
 class ManifestColor(TypedDict):
 	"""Definition of a color dictionary in the manifest."""
 
@@ -27,27 +35,29 @@ def validate_manifest(path: str = "assets/data/manifest.json") -> None:  # noqa:
 		path (optional): Path to the manifest file. Defaults to "assets/data/manifest.json".
 
 	Raises:
-		ValueError: The manifest file failed to validate.
+		ValidationError: The manifest file failed to validate.
 	"""  # noqa: DOC501, DOC502
 
-	def _validate_color(color: Optional[ManifestColor], *, check_for_none: bool = True) -> Optional[ValueError]:
+	def _validate_color(color: Optional[ManifestColor], *, check_for_none: bool = True) -> Optional[ValidationError]:
 		if not color:
 			if check_for_none:
-				return ValueError("Color is `null`")
+				return ValidationError("Color is `null`")
 
 			return None
 
 		if "class" not in color or "value" not in color:
-			return ValueError(f"Missing `class` or `value` keys in {color}")
+			return ValidationError(f"Missing `class` or `value` keys in {color}")
 
 		if color["class"] not in HexColor.supported_classes:
-			return ValueError(f"Invalid color class: {color['class']}, should be one of {HexColor.supported_classes}")
+			return ValidationError(
+				f"Invalid color class: {color['class']}, should be one of {HexColor.supported_classes}"
+			)
 
 		try:
 			load_manifest_color(color)
 
-		except ValueError as e:
-			return e
+		except Exception as e:  # noqa: BLE001
+			return (ValidationError(e))
 
 	with Path(path).open(encoding="utf-8") as f:
 		manifest = json.load(f)
@@ -57,27 +67,29 @@ def validate_manifest(path: str = "assets/data/manifest.json") -> None:  # noqa:
 	slugs = [dic["slug"] for dic in manifest["data"]]
 
 	if not Path(manifest["root"]).exists() or not Path(manifest["root"]).is_dir():
-		found_errors.append(ValueError(f"Root directory {manifest['root']} does not exist or is not a directory"))
+		found_errors.append(ValidationError(f"Root directory {manifest['root']} does not exist or is not a directory"))
 
 	if len(set(slugs)) != len(slugs):
-		found_errors.append(ValueError(f"Duplicate slugs found: { {item for item in slugs if slugs.count(item) > 1} }"))
+		found_errors.append(
+			ValidationError(f"Duplicate slugs found: { {item for item in slugs if slugs.count(item) > 1} }"),
+		)
 
 	root_dir = manifest["root"]
 
 	for dic in manifest["data"]:
 		if "slug" not in dic:
-			found_errors.append(ValueError(f"Missing slug in {dic}"))
+			found_errors.append(ValidationError(f"Missing slug in {dic}", dic))
 
 		try:
 			SVG.from_file(root_dir + dic["logo"])
-		except ValueError as e:
+		except (ValidationError, FileNotFoundError) as e:
 			found_errors.append(e)
 
 		if dic.get("style", None) and dic["style"] not in ShieldsIOBadgeStyle.styles:
-			found_errors.append(ValueError(f"Invalid style: {dic['style']}"))
+			found_errors.append(ValidationError(f"Invalid style: {dic['style']}", dic))
 
 		if dic.get("font", None) and dic["font"] not in WebSafeFont.family_names:
-			found_errors.append(ValueError(f"Invalid font: {dic['font']}"))
+			found_errors.append(ValidationError(f"Invalid font: {dic['font']}", dic))
 
 		if error := _validate_color(dic.get("color", None)):
 			found_errors.append(error)
@@ -102,7 +114,7 @@ def load_manifest_color(color: ManifestColor) -> HexColor:  # noqa: PLR0911, RET
 		color: The color to load.
 
 	Raises:
-		ValueError: The named color is invalid.
+		ValidationError: The named color is invalid.
 
 	Returns:
 		The loaded color.
@@ -129,4 +141,4 @@ def load_manifest_color(color: ManifestColor) -> HexColor:  # noqa: PLR0911, RET
 		if color["value"] in CSSNamedColor.names:
 			return HexColor.from_css(CSSNamedColor(color["value"].replace("-", "_").upper()))
 
-		raise ValueError(f"Invalid named color: {color['value']}")
+		raise ValidationError(f"Invalid named color: {color['value']}")
