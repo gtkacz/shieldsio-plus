@@ -39,8 +39,8 @@ def script() -> None:
 			"color": load_manifest_color(logo["color"]),
 			"label_color": load_manifest_color(logo["label_color"]) if logo.get("label_color", None) else None,
 			"logo_color": load_manifest_color(logo["logo_color"]) if logo.get("logo_color", None) else None,
-			"font": WebSafeFont.from_family_name(logo["logo_color"])
-			if logo.get("logo_color", None)
+			"font": WebSafeFont.from_family_name(logo["logo_font"])
+			if logo.get("logo_font", None)
 			else WebSafeFont.DEFAULT,
 		}
 

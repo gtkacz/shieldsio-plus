@@ -1,0 +1,18 @@
+[
+	{
+		"family-name": "Boldonse",
+		"font-style": "normal",
+		"font-weight": "400",
+		"font-display": "swap",
+		"src": ["https://fonts.gstatic.com/s/boldonse/v1/ZgNQjPxGPbbJUZemjB31jGDWNg.woff2", "https://fonts.gstatic.com/s/boldonse/v1/ZgNQjPxGPbbJUZemjB37jGA.woff2"],
+		"unicode-range": ["latin", "latin-ext"]
+	},
+	{
+		"family-name": "Gidole",
+		"font-style": "normal",
+		"font-weight": "400",
+		"font-display": "swap",
+		"src": "https://fonts.gstatic.com/s/gidole/v24/sZlFdR6O8zVVEiMqAZFXe6E.woff2",
+		"unicode-range": "latin"
+	}
+]

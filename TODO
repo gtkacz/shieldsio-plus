@@ -4,3 +4,4 @@
 - Create script to automatically fetch usable icons from https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json
 - Allow more parameters from filenames or json
 - Add support for Google fonts
+- Add support for ANSI: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors

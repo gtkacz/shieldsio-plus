@@ -53,8 +53,10 @@ def should_run(
 	except ValueError:
 		return True
 
-	if last_run < Path(manifest_path).stat().st_mtime:
-		logger.debug("Manifest file has not been modified since last run.")
+	if last_run > Path(manifest_path).stat().st_mtime:
+		logger.debug(
+			"Manifest file has not been modified since last run.",
+		)
 		return False
 
 	return True

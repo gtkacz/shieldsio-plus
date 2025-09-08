@@ -42,6 +42,8 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 | ibm-white | ![ibm-white](./assets/shields/flat/ibm-white.svg) |
 | ieee | ![ieee](./assets/shields/flat/ieee.svg) |
 | ieee-white | ![ieee-white](./assets/shields/flat/ieee-white.svg) |
+| lattes | ![lattes](./assets/shields/flat/lattes.svg) |
+| lattes-white | ![lattes-white](./assets/shields/flat/lattes-white.svg) |
 | linkedin | ![linkedin](./assets/shields/flat/linkedin.svg) |
 | linkedin-blue | ![linkedin-blue](./assets/shields/flat/linkedin-blue.svg) |
 | linkedin-white | ![linkedin-white](./assets/shields/flat/linkedin-white.svg) |
@@ -99,6 +101,54 @@ To use this repository as a static API, all you need to do is pass the `slug` yo
 
 #### Available Fonts
 
+| Family Name | Type | Sample |
+| --- | --- | --- |
+| Andale Mono | Monospace | ![twitter](./assets/shields/flat/andale_mono/twitter.svg) |
+| Arial | Sans-Serif | ![twitter](./assets/shields/flat/arial/twitter.svg) |
+| Arial Black | Sans-Serif | ![twitter](./assets/shields/flat/arial_black/twitter.svg) |
+| Arial Narrow | Sans-Serif | ![twitter](./assets/shields/flat/arial_narrow/twitter.svg) |
+| Arial Rounded Mt Bold | Sans-Serif | ![twitter](./assets/shields/flat/arial_rounded_mt_bold/twitter.svg) |
+| Avant Garde | Sans-Serif | ![twitter](./assets/shields/flat/avant_garde/twitter.svg) |
+| Baskerville | Serif | ![twitter](./assets/shields/flat/baskerville/twitter.svg) |
+| Big Caslon | Serif | ![twitter](./assets/shields/flat/big_caslon/twitter.svg) |
+| Bodoni Mt | Serif | ![twitter](./assets/shields/flat/bodoni_mt/twitter.svg) |
+| Book Antiqua | Serif | ![twitter](./assets/shields/flat/book_antiqua/twitter.svg) |
+| Brush Script Mt | Cursive | ![twitter](./assets/shields/flat/brush_script_mt/twitter.svg) |
+| Calibri | Sans-Serif | ![twitter](./assets/shields/flat/calibri/twitter.svg) |
+| Calisto Mt | Serif | ![twitter](./assets/shields/flat/calisto_mt/twitter.svg) |
+| Cambria | Serif | ![twitter](./assets/shields/flat/cambria/twitter.svg) |
+| Candara | Sans-Serif | ![twitter](./assets/shields/flat/candara/twitter.svg) |
+| Century Gothic | Sans-Serif | ![twitter](./assets/shields/flat/century_gothic/twitter.svg) |
+| Consolas | Monospace | ![twitter](./assets/shields/flat/consolas/twitter.svg) |
+| Copperplate | Fantasy | ![twitter](./assets/shields/flat/copperplate/twitter.svg) |
+| Courier New | Monospace | ![twitter](./assets/shields/flat/courier_new/twitter.svg) |
+| Didot | Serif | ![twitter](./assets/shields/flat/didot/twitter.svg) |
+| Franklin Gothic Medium | Sans-Serif | ![twitter](./assets/shields/flat/franklin_gothic_medium/twitter.svg) |
+| Futura | Sans-Serif | ![twitter](./assets/shields/flat/futura/twitter.svg) |
+| Garamond | Serif | ![twitter](./assets/shields/flat/garamond/twitter.svg) |
+| Geneva | Sans-Serif | ![twitter](./assets/shields/flat/geneva/twitter.svg) |
+| Georgia | Serif | ![twitter](./assets/shields/flat/georgia/twitter.svg) |
+| Gill Sans | Sans-Serif | ![twitter](./assets/shields/flat/gill_sans/twitter.svg) |
+| Goudy Old Style | Serif | ![twitter](./assets/shields/flat/goudy_old_style/twitter.svg) |
+| Helvetica Neue | Sans-Serif | ![twitter](./assets/shields/flat/helvetica_neue/twitter.svg) |
+| Hoefler Text | Serif | ![twitter](./assets/shields/flat/hoefler_text/twitter.svg) |
+| Impact | Sans-Serif | ![twitter](./assets/shields/flat/impact/twitter.svg) |
+| Lucida Bright | Serif | ![twitter](./assets/shields/flat/lucida_bright/twitter.svg) |
+| Lucida Console | Monospace | ![twitter](./assets/shields/flat/lucida_console/twitter.svg) |
+| Lucida Grande | Sans-Serif | ![twitter](./assets/shields/flat/lucida_grande/twitter.svg) |
+| Lucida Sans Typewriter | Monospace | ![twitter](./assets/shields/flat/lucida_sans_typewriter/twitter.svg) |
+| Optima | Sans-Serif | ![twitter](./assets/shields/flat/optima/twitter.svg) |
+| Palatino | Serif | ![twitter](./assets/shields/flat/palatino/twitter.svg) |
+| Papyrus | Fantasy | ![twitter](./assets/shields/flat/papyrus/twitter.svg) |
+| Perpetua | Serif | ![twitter](./assets/shields/flat/perpetua/twitter.svg) |
+| Rockwell | Serif | ![twitter](./assets/shields/flat/rockwell/twitter.svg) |
+| Rockwell Extra Bold | Monospace | ![twitter](./assets/shields/flat/rockwell_extra_bold/twitter.svg) |
+| Segoe Ui | Sans-Serif | ![twitter](./assets/shields/flat/segoe_ui/twitter.svg) |
+| Tahoma | Sans-Serif | ![twitter](./assets/shields/flat/tahoma/twitter.svg) |
+| Timesnewroman | Serif | ![twitter](./assets/shields/flat/timesnewroman/twitter.svg) |
+| Trebuchet Ms | Sans-Serif | ![twitter](./assets/shields/flat/trebuchet_ms/twitter.svg) |
+| Verdana | Sans-Serif | ![twitter](./assets/shields/flat/verdana/twitter.svg) |
+| Monaco | Monospace | ![twitter](./assets/shields/flat/monaco/twitter.svg) |
 ##### Web-safe Fonts
 
 | Family Name | Type | Sample |

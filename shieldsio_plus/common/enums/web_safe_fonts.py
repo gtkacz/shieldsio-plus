@@ -5,7 +5,7 @@ from typing import TypedDict
 from shieldsio_plus.common.enums.better_enum import BetterEnum
 
 
-class _WebSafeFontData(TypedDict):
+class WebSafeFontEnumValue(TypedDict):
 	"""
 	Definition of a web-safe font dictionary.
 
@@ -27,7 +27,7 @@ class _WebSafeFont(BetterEnum):
 	"""
 
 	@classmethod
-	def get_values_by_key(cls, key: "FontFamily") -> list[dict[str, _WebSafeFontData]]:
+	def get_values_by_key(cls, key: "FontFamily") -> list[dict[str, WebSafeFontEnumValue]]:
 		"""
 		Returns all font values belonging to a specific font family.
 

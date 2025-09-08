@@ -23,7 +23,7 @@ class SVG:
 	"""
 
 	svg_str: str
-	b64: str = field(init=False, default="")
+	b64: str = field(init=False, default="", repr=False)
 
 	def __post_init__(self) -> None:
 		"""

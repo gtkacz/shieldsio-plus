@@ -282,6 +282,76 @@
       "font": null
     },
     {
+      "logo": "lattes2.svg",
+      "slug": "lattes2",
+      "label": "Lattes",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "204369"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "lattes2.svg",
+      "slug": "lattes2-lighter",
+      "label": "Lattes",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "0170b8"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "lattes2-white.svg",
+      "slug": "lattes2-white",
+      "label": "Lattes",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "lattes.svg",
+      "slug": "lattes",
+      "label": "Lattes",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "2C2B64"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
+      "logo": "lattes-blue.svg",
+      "slug": "lattes-white",
+      "label": "Lattes",
+      "message": null,
+      "style": null,
+      "color": {
+        "class": "hex",
+        "value": "FFF"
+      },
+      "label_color": null,
+      "logo_color": null,
+      "font": null
+    },
+    {
       "logo": "linkedin-blue.svg",
       "slug": "linkedin-blue",
       "label": "LinkedIn",
